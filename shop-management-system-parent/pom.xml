@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.army.shop</groupId>
+    <artifactId>shop-management-system</artifactId>
+    <version>0.0.1</version>
+  </parent>
+  <groupId>org.army.shop</groupId>
+  <artifactId>shop-management-system-parent</artifactId>
+  <version>0.0.1</version>
+  <packaging>pom</packaging>
+  <name>shop-management-system-parent</name>
+
+  <modules>
+    <module>shop-management-base-service</module>
+    <module>common-api</module>
+    <module>organization-api</module>
+    <module>inventory-api</module>
+    <module>sales-api</module>
+    <module>accounting-api</module>
+  </modules>
+
+</project>

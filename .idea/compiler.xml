@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="accounting" />
+        <module name="accounting-api" />
+        <module name="common" />
+        <module name="common-api" />
+        <module name="inventory" />
+        <module name="inventory-api" />
+        <module name="organization" />
+        <module name="organization-api" />
+        <module name="sales" />
+        <module name="sales-api" />
+        <module name="shop-management-base-service" />
+        <module name="shop-management-system-application" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="accounting-api (1)" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

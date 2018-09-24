@@ -1,7 +1,7 @@
 package org.army.shop.organization.entity;
 
-import org.army.shop.entity.BaseEntity;
-import org.army.shop.entity.Name;
+import org.army.shop.common.entity.BaseEntity;
+import org.army.shop.common.entity.Name;
 
 import javax.persistence.Embedded;
 import javax.persistence.Entity;

@@ -1,6 +1,6 @@
 package org.army.shop.sales.entity;
 
-import org.army.shop.entity.BaseEntity;
+import org.army.shop.common.entity.BaseEntity;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
@@ -20,7 +20,8 @@ public class Invoice extends BaseEntity {
 
     private BigDecimal total;
 
-    @Transient
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @JoinColumn(name = "invoice_id")
     private List<InvoiceItem> items;
 
     private String status;

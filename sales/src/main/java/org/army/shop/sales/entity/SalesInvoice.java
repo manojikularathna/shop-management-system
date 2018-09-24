@@ -1,14 +1,17 @@
 package org.army.shop.sales.entity;
 
-import org.army.shop.organization.entity.User;
-
 import javax.persistence.Entity;
-import javax.persistence.Transient;
 
 @Entity
 public class SalesInvoice extends Invoice {
 
-    @Transient
-    private User soldBy;
+    private Long soldBy;
 
+    public Long getSoldBy() {
+        return soldBy;
+    }
+
+    public void setSoldBy(Long soldBy) {
+        this.soldBy = soldBy;
+    }
 }

@@ -1,7 +1,6 @@
 package org.army.shop.inventory.entity;
 
-import org.army.shop.entity.PrimaryContactInformation;
-import org.army.shop.entity.SecondaryContactInformation;
+import org.army.shop.common.entity.PrimaryContactInformation;
 
 import javax.persistence.*;
 import java.util.List;
@@ -18,8 +17,7 @@ public class Supplier {
     @Embedded
     private PrimaryContactInformation primaryContactInfo;
 
-//    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    @Transient
+    @OneToMany(mappedBy = "supplier", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<SupplyItem> supplyingItems;
 
     public Long getSupplierId() {

@@ -1,9 +1,9 @@
 package org.army.shop.sales.to;
 
+import org.army.shop.sales.entity.InvoiceItem;
+
 import java.math.BigDecimal;
 import java.util.List;
-
-import org.army.shop.sales.entity.InvoiceItem;
 
 public class SalesRequest extends BaseRequest{
 	

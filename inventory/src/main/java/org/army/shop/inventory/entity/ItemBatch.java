@@ -1,6 +1,8 @@
 package org.army.shop.inventory.entity;
 
-import org.army.shop.entity.BaseEntity;
+import org.army.shop.common.entity.BaseEntity;
+import org.army.shop.common.entity.ItemQuantity;
+import org.army.shop.common.entity.UnitPrice;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
@@ -22,6 +24,10 @@ public class ItemBatch extends BaseEntity {
     private Date purchasedDate;
 
     @Embedded
+    @AttributeOverrides({
+            @AttributeOverride(name = "unit", column = @Column ( name = "purchased_unit")),
+            @AttributeOverride(name = "quantity", column = @Column ( name = "purchased_quantity"))
+    })
     private ItemQuantity purchasedQuantity;
 
     @Embedded
@@ -31,7 +37,11 @@ public class ItemBatch extends BaseEntity {
     @JoinColumn(name = "supplier_id")
     private Supplier supplier;
 
-    @Transient
+    @Embedded
+    @AttributeOverrides({
+            @AttributeOverride(name = "unit", column = @Column ( name = "low_stock_unit")),
+            @AttributeOverride(name = "quantity", column = @Column ( name = "low_stock_quantity"))
+    })
     private ItemQuantity lowStockBoundary;
 
     @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)

@@ -1,0 +1,9 @@
+sales:
+  profit:
+    type: PERCENTAGE
+    value: 0.05
+  amendments:
+    type: TAX
+    - name: VAT
+      type: PERCENTAGE
+      value: 0.10

@@ -1,5 +1,8 @@
 package org.army.shop.inventory.entity;
 
+import org.army.shop.common.entity.ItemQuantity;
+import org.army.shop.common.entity.UnitPrice;
+
 import javax.persistence.*;
 
 @Entity

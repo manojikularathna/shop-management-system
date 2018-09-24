@@ -1,20 +1,25 @@
 package org.army.shop.sales.entity;
 
-import org.army.shop.inventory.entity.ItemBatch;
-import org.army.shop.inventory.entity.ItemQuantity;
-import org.army.shop.inventory.entity.UnitPrice;
-import sun.dc.pr.PRError;
+import org.army.shop.common.entity.BaseEntity;
+import org.army.shop.common.entity.ItemQuantity;
+import org.army.shop.common.entity.UnitPrice;
 
+import javax.persistence.*;
 import java.math.BigDecimal;
 
-public class InvoiceItem {
+@Entity
+public class InvoiceItem extends BaseEntity {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long invoiceItemId;
 
-    private ItemBatch item;
+    private Long itemBatchId;
 
+    @Embedded
     private ItemQuantity quantity;
 
+    @Embedded
     private UnitPrice price;
 
     private BigDecimal amount;
@@ -29,12 +34,12 @@ public class InvoiceItem {
         this.invoiceItemId = invoiceItemId;
     }
 
-    public ItemBatch getItem() {
-        return item;
+    public Long getItemBatchId() {
+        return itemBatchId;
     }
 
-    public void setItem(ItemBatch item) {
-        this.item = item;
+    public void setItemBatchId(Long itemBatchId) {
+        this.itemBatchId = itemBatchId;
     }
 
     public ItemQuantity getQuantity() {
@@ -68,4 +73,5 @@ public class InvoiceItem {
     public void setStatus(String status) {
         this.status = status;
     }
+
 }

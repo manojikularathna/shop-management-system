@@ -1,5 +1,7 @@
 package org.army.shop.inventory.entity;
 
+import org.army.shop.common.entity.ItemQuantity;
+
 import javax.persistence.*;
 
 @Entity
@@ -9,13 +11,22 @@ public class SupplyItem {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long supplyItemId;
 
-    @Transient
+    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @JoinColumn(name = "item_brand_id")
     private ItemBrand itemBrand;
 
-    @Transient
+    @Embedded
+    @AttributeOverrides({
+            @AttributeOverride(name = "unit", column = @Column ( name = "min_unit")),
+            @AttributeOverride(name = "quantity", column = @Column ( name = "min_quantity"))
+    })
     private ItemQuantity minQuantity;
 
-    @Transient
+    @Embedded
+    @AttributeOverrides({
+            @AttributeOverride(name = "unit", column = @Column ( name = "max_unit")),
+            @AttributeOverride(name = "quantity", column = @Column ( name = "max_quantity"))
+    })
     private ItemQuantity maxQuantity;
 
     @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)

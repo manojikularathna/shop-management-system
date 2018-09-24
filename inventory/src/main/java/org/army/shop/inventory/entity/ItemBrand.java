@@ -1,5 +1,7 @@
 package org.army.shop.inventory.entity;
 
+import org.army.shop.common.entity.ItemQuantity;
+
 import javax.persistence.*;
 import java.math.BigDecimal;
 
@@ -20,6 +22,10 @@ public class ItemBrand {
     private BigDecimal profitPercentage;
 
     @Embedded
+    @AttributeOverrides({
+            @AttributeOverride(name = "unit", column = @Column ( name = "low_stock_unit")),
+            @AttributeOverride(name = "quantity", column = @Column ( name = "low_stock_quantity"))
+    })
     private ItemQuantity lowStockBoundary;
 
     public Long getItemBrandId() {

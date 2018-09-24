@@ -1,17 +1,27 @@
 package org.army.shop.sales.entity;
 
-import org.army.shop.inventory.entity.Supplier;
-import org.army.shop.organization.entity.User;
-
 import javax.persistence.Entity;
-import javax.persistence.Transient;
 
 @Entity
 public class PurchaseInvoice extends Invoice {
 
-    @Transient
-    private User placedBy;
+    private Long placedBy;
 
-    @Transient
-    private Supplier supplier;
+    private Long supplier;
+
+    public Long getPlacedBy() {
+        return placedBy;
+    }
+
+    public void setPlacedBy(Long placedBy) {
+        this.placedBy = placedBy;
+    }
+
+    public Long getSupplier() {
+        return supplier;
+    }
+
+    public void setSupplier(Long supplier) {
+        this.supplier = supplier;
+    }
 }

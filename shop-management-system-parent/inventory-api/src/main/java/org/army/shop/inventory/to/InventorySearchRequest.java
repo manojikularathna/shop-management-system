@@ -2,9 +2,17 @@ package org.army.shop.inventory.to;
 
 public class InventorySearchRequest {
 
+    private String view;
     private String itemCategoryCode;
-
     private String brandName;
+
+    public String getView() {
+        return view;
+    }
+
+    public void setView(String view) {
+        this.view = view;
+    }
 
     public String getItemCategoryCode() {
         return itemCategoryCode;

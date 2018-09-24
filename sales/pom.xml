@@ -18,17 +18,26 @@
   <dependencies>
     <dependency>
       <groupId>org.army.shop</groupId>
+      <artifactId>shop-management-base-service</artifactId>
+      <version>0.0.1</version>
+    </dependency>    <dependency>
+      <groupId>org.army.shop</groupId>
+      <artifactId>sales-api</artifactId>
+      <version>0.0.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.army.shop</groupId>
       <artifactId>common</artifactId>
       <version>0.0.1</version>
     </dependency>
     <dependency>
       <groupId>org.army.shop</groupId>
-      <artifactId>organization</artifactId>
+      <artifactId>organization-api</artifactId>
       <version>0.0.1</version>
     </dependency>
     <dependency>
       <groupId>org.army.shop</groupId>
-      <artifactId>inventory</artifactId>
+      <artifactId>inventory-api</artifactId>
       <version>0.0.1</version>
     </dependency>
   </dependencies>

@@ -1,4 +1,4 @@
-package org.army.shop;
+package org.army.shop.conf;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

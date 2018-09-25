@@ -9,3 +9,15 @@ spring:
     url: jdbc:mysql://localhost:3306/db01
     username: root
     password: 12345678
+
+# ----------------
+shop:
+  profit:
+    type: PERCENTAGE
+    value: 0.05
+  amendments:
+    TAX:
+    - name: VAT
+      type: PERCENTAGE
+      value: 0.10
+# ----------------

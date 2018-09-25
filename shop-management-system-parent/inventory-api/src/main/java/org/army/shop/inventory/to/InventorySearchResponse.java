@@ -4,16 +4,16 @@ import java.util.List;
 
 public class InventorySearchResponse {
 
-    private List<ItemCategoryTO> categories;
+//    private List<ItemCategoryTO> categories;
     private List<ItemBatchTO> items;
 
-    public List<ItemCategoryTO> getCategories() {
-        return categories;
-    }
+//    public List<ItemCategoryTO> getCategories() {
+//        return categories;
+//    }
 
-    public void setCategories(List<ItemCategoryTO> categories) {
-        this.categories = categories;
-    }
+//    public void setCategories(List<ItemCategoryTO> categories) {
+//        this.categories = categories;
+//    }
 
     public List<ItemBatchTO> getItems() {
         return items;

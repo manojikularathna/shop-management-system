@@ -1,27 +1,9 @@
 package org.army.shop.inventory.to;
 
-public class InventorySearchRequest {
+public class InventorySearchTO {
 
-    private String view;
-    private String genericCriterion;
     private String itemCategoryCode;
     private String brandName;
-
-    public String getView() {
-        return view;
-    }
-
-    public void setView(String view) {
-        this.view = view;
-    }
-
-    public String getGenericCriterion() {
-        return genericCriterion;
-    }
-
-    public void setGenericCriterion(String genericCriterion) {
-        this.genericCriterion = genericCriterion;
-    }
 
     public String getItemCategoryCode() {
         return itemCategoryCode;

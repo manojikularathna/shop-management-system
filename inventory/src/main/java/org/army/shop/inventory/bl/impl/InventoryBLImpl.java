@@ -10,6 +10,7 @@ import org.army.shop.inventory.entity.ItemBatchStock;
 import org.army.shop.inventory.entity.ItemCategory;
 import org.army.shop.inventory.to.*;
 import org.army.shop.inventory.util.InventoryConstants;
+import org.army.shop.inventory.util.InventoryToEntityTransformer;
 import org.army.shop.inventory.util.InventoryToTOTransformer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -73,17 +74,21 @@ public class InventoryBLImpl implements InventoryBL {
 
                 });
 
-//        TODO -------------------------
         return null;
     }
 
-    @Override
+    @Transactional(propagation = Propagation.REQUIRED)
     public BaseResponse addItemCategory(ItemCategoryTO itemCategoryTO) {
-//        TODO
-        return null;
+
+        ItemCategory itemCategory = InventoryToEntityTransformer.toItemCategory(itemCategoryTO);
+        itemCategory = commonDAO.add(itemCategory);
+
+        BaseResponse response = new BaseResponse();
+        response.setSuccess(true);
+        return response;
     }
 
-    @Override
+    @Transactional(propagation = Propagation.REQUIRED)
     public BaseResponse updateItemCategory(ItemCategoryTO itemCategoryTO) {
 //        TODO
         return null;

@@ -1,9 +1,11 @@
 package org.army.shop.inventory.bl.impl;
 
 import org.army.shop.common.conf.ApplicationConfiguration;
+import org.army.shop.common.dao.CommonDAO;
 import org.army.shop.inventory.bl.InventoryBL;
 import org.army.shop.inventory.dao.InventoryDAO;
 import org.army.shop.inventory.entity.ItemBatch;
+import org.army.shop.inventory.entity.ItemCategory;
 import org.army.shop.inventory.to.*;
 import org.army.shop.inventory.util.InventoryConstants;
 import org.army.shop.inventory.util.InventoryToTOTransformer;
@@ -23,6 +25,9 @@ public class InventoryBLImpl implements InventoryBL {
 
     @Autowired
     private InventoryDAO inventoryDAO;
+
+    @Autowired
+    private CommonDAO commonDAO;
 
     @Override
     public InventorySearchResponse search(InventorySearchRequest inventorySearch) {
@@ -53,5 +58,26 @@ public class InventoryBLImpl implements InventoryBL {
     @Override
     public BaseResponse remove(InventoryAdjustmentRequest inventoryAdjustment) {
         return null;
+    }
+
+    @Override
+    public BaseResponse addItemCategory(ItemCategoryTO itemCategoryTO) {
+        return null;
+    }
+
+    @Override
+    public BaseResponse updateItemCategory(ItemCategoryTO itemCategoryTO) {
+        return null;
+    }
+
+    public List<ItemCategoryTO> getItemCategories() {
+        List<ItemCategory> suppliers = commonDAO.get(ItemCategory.class);
+
+        List<ItemCategoryTO> supplierTOs = suppliers
+                .stream()
+                .map(InventoryToTOTransformer::toItemCategoryTO)
+                .collect(Collectors.toList());
+
+        return supplierTOs;
     }
 }

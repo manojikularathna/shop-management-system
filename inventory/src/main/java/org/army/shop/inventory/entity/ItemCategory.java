@@ -2,6 +2,7 @@ package org.army.shop.inventory.entity;
 
 import org.army.shop.common.entity.BaseEntity;
 import org.army.shop.common.entity.ItemQuantity;
+import org.army.shop.common.entity.Value;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
@@ -17,7 +18,12 @@ public class ItemCategory extends BaseEntity {
 
     private String description;
 
-    private BigDecimal profitPercentage;
+    @Embedded
+    @AttributeOverrides({
+            @AttributeOverride(name = "type", column = @Column ( name = "profit_type")),
+            @AttributeOverride(name = "value", column = @Column ( name = "profit_value"))
+    })
+    private Value profit;
 
     @Embedded
     @AttributeOverrides({
@@ -50,12 +56,12 @@ public class ItemCategory extends BaseEntity {
         this.description = description;
     }
 
-    public BigDecimal getProfitPercentage() {
-        return profitPercentage;
+    public Value getProfit() {
+        return profit;
     }
 
-    public void setProfitPercentage(BigDecimal profitPercentage) {
-        this.profitPercentage = profitPercentage;
+    public void setProfit(Value profit) {
+        this.profit = profit;
     }
 
     public ItemQuantity getLowStockBoundary() {

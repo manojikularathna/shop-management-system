@@ -12,5 +12,7 @@ public interface SupplierService {
 
     BaseResponse addSupplier(SupplierTO supplier);
 
+    BaseResponse updateSupplier(SupplierTO supplier);
+
     BaseResponse supply(InventorySupplyRequest request);
 }

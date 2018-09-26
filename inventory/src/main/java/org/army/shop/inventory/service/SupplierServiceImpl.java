@@ -38,4 +38,10 @@ public class SupplierServiceImpl implements SupplierService {
     public BaseResponse supply(@RequestBody InventorySupplyRequest request) {
         return supplierBL.supply(request);
     }
+
+    @RequestMapping(path = "/update", method = RequestMethod.POST,
+            consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
+    public BaseResponse updateSupplier(SupplierTO supplier) {
+        return supplierBL.updateSupplier(supplier);
+    }
 }

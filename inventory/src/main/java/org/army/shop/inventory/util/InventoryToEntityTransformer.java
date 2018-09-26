@@ -1,6 +1,8 @@
 package org.army.shop.inventory.util;
 
+import org.army.shop.inventory.entity.ItemBatch;
 import org.army.shop.inventory.entity.Supplier;
+import org.army.shop.inventory.to.InventorySupplyItemBatchTO;
 import org.army.shop.inventory.to.SupplierTO;
 
 public class InventoryToEntityTransformer {
@@ -9,6 +11,12 @@ public class InventoryToEntityTransformer {
         Supplier supplier = new Supplier();
 
         return supplier;
+    }
+
+    public static ItemBatch toItemBatch(InventorySupplyItemBatchTO itemBatchTO) {
+        ItemBatch itemBatch = new ItemBatch();
+
+        return itemBatch;
     }
 
 }

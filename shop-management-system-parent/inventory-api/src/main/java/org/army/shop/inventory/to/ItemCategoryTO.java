@@ -1,8 +1,7 @@
 package org.army.shop.inventory.to;
 
-import org.army.shop.sales.to.ValueDefinition;
+import org.army.shop.common.to.ValueDefinition;
 
-import java.math.BigDecimal;
 import java.util.List;
 
 public class ItemCategoryTO {

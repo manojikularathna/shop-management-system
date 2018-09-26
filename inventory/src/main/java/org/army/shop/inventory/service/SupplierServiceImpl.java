@@ -4,7 +4,7 @@ import org.army.shop.inventory.api.SupplierService;
 import org.army.shop.inventory.bl.SupplierBL;
 import org.army.shop.inventory.to.InventorySupplyRequest;
 import org.army.shop.inventory.to.SupplierTO;
-import org.army.shop.sales.to.BaseResponse;
+import org.army.shop.common.to.BaseResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -33,15 +33,16 @@ public class SupplierServiceImpl implements SupplierService {
         return supplierBL.addSupplier(supplier);
     }
 
-    @RequestMapping(path = "/supply", method = RequestMethod.POST,
-            consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
-    public BaseResponse supply(@RequestBody InventorySupplyRequest request) {
-        return supplierBL.supply(request);
-    }
 
     @RequestMapping(path = "/update", method = RequestMethod.POST,
             consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
     public BaseResponse updateSupplier(SupplierTO supplier) {
         return supplierBL.updateSupplier(supplier);
+    }
+
+    @RequestMapping(path = "/supply", method = RequestMethod.POST,
+            consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
+    public BaseResponse supply(@RequestBody InventorySupplyRequest request) {
+        return supplierBL.supply(request);
     }
 }

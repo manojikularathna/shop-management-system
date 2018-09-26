@@ -1,22 +1,17 @@
-package org.army.shop.sales.to;
+package org.army.shop.common.to;
 
 import java.math.BigDecimal;
 
 public class ValueDefinition {
 
-    public enum Type {
-        VALUE,
-        PERCENTAGE
-    }
-
-    private Type type;
+    private String type;
     private BigDecimal value;
 
-    public Type getType() {
+    public String getType() {
         return type;
     }
 
-    public void setType(Type type) {
+    public void setType(String type) {
         this.type = type;
     }
 

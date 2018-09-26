@@ -4,16 +4,15 @@ import java.util.List;
 
 public class InventorySupplyRequest {
 
-    private SupplierTO supplier;
-
+    private Long supplierId;
     private List<InventorySupplyItemBatchTO> items;
 
-    public SupplierTO getSupplier() {
-        return supplier;
+    public Long getSupplierId() {
+        return supplierId;
     }
 
-    public void setSupplier(SupplierTO supplier) {
-        this.supplier = supplier;
+    public void setSupplierId(Long supplierId) {
+        this.supplierId = supplierId;
     }
 
     public List<InventorySupplyItemBatchTO> getItems() {

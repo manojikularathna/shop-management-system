@@ -8,39 +8,23 @@
     <version>0.0.1</version>
   </parent>
   <groupId>org.army.shop</groupId>
-  <artifactId>shop-management-base-service</artifactId>
+  <artifactId>base-api</artifactId>
   <version>0.0.1</version>
-  <name>shop-mangement-base-service</name>
+  <name>base-api</name>
   <url>http://maven.apache.org</url>
   <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
-
   <dependencies>
     <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-web</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-jdbc</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-data-jpa</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>mysql</groupId>
-      <artifactId>mysql-connector-java</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>com.google.guava</groupId>
-      <artifactId>guava</artifactId>
-      <version>25.0-jre</version>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.springframework.cloud</groupId>
       <artifactId>spring-cloud-starter-openfeign</artifactId>
     </dependency>
   </dependencies>
-
 </project>

@@ -1,7 +1,7 @@
 package org.army.shop.common.conf;
 
-import org.army.shop.sales.to.AmendmentDefinition;
-import org.army.shop.sales.to.ValueDefinition;
+import org.army.shop.common.to.AmendmentDefinition;
+import org.army.shop.common.to.ValueDefinition;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 

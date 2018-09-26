@@ -17,6 +17,7 @@
 
   <dependencies>
   </dependencies>
+
   <modules>
     <module>shop-management-system-parent</module>
     <module>common</module>
@@ -45,4 +46,15 @@
       </dependency>
     </dependencies>
   </dependencyManagement>
+
+  <repositories>
+    <repository>
+      <id>spring</id>
+      <name>Spring</name>
+      <url>https://repo.spring.io/libs-release</url>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
+  </repositories>
 </project>

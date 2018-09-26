@@ -4,7 +4,7 @@ import org.army.shop.inventory.to.InventoryAdjustmentRequest;
 import org.army.shop.inventory.to.InventorySearchRequest;
 import org.army.shop.inventory.to.InventorySearchResponse;
 import org.army.shop.inventory.to.ItemCategoryTO;
-import org.army.shop.sales.to.BaseResponse;
+import org.army.shop.common.to.BaseResponse;
 
 import java.util.List;
 

@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="accounting" />
         <module name="accounting-api" />
+        <module name="base-api" />
         <module name="common" />
         <module name="common-api" />
         <module name="inventory" />

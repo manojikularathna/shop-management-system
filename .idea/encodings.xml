@@ -10,6 +10,7 @@
     <file url="file://$PROJECT_DIR$/shop-management-system-application" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/shop-management-system-parent" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/shop-management-system-parent/accounting-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop-management-system-parent/base-api" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/shop-management-system-parent/common-api" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/shop-management-system-parent/inventory-api" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/shop-management-system-parent/organization-api" charset="UTF-8" />

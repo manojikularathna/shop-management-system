@@ -14,6 +14,7 @@
 
   <modules>
     <module>shop-management-base-service</module>
+    <module>base-api</module>
     <module>common-api</module>
     <module>organization-api</module>
     <module>inventory-api</module>

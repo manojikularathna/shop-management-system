@@ -9,6 +9,8 @@ public class InvoiceItemTO {
 
     private Long invoiceItemId;
 
+    private Long itemBrandId;
+
     private ItemQuantityTO quantity;
 
     private UnitPriceTO price;
@@ -23,6 +25,14 @@ public class InvoiceItemTO {
 
     public void setInvoiceItemId(Long invoiceItemId) {
         this.invoiceItemId = invoiceItemId;
+    }
+
+    public Long getItemBrandId() {
+        return itemBrandId;
+    }
+
+    public void setItemBrandId(Long itemBrandId) {
+        this.itemBrandId = itemBrandId;
     }
 
     public ItemQuantityTO getQuantity() {

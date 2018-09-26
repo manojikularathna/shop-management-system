@@ -1,5 +1,7 @@
 package org.army.shop.sales.to;
 
+import org.army.shop.common.to.BaseResponse;
+
 import java.math.BigDecimal;
 import java.util.List;
 

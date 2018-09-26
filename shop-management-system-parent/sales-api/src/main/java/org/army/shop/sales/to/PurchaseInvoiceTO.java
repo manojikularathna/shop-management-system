@@ -5,7 +5,7 @@ import org.army.shop.organization.to.UserTO;
 
 public class PurchaseInvoiceTO extends InvoiceTO {
 
-    private UserTO placedBy;
+    private Long placedBy;
 
-    private SupplierTO supplier;
+    private Long supplier;
 }

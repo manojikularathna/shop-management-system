@@ -2,58 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2be1aaff-0b36-4aac-af48-1c04ca4d051e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/util/InventoryUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop-management-system-parent/common-api/src/main/java/org/army/shop/common/CommonConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sales/src/main/java/org/army/shop/sales/bl/PurchaseServiceBL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sales/src/main/java/org/army/shop/sales/bl/impl/PurchaseServiceBLImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sales/src/main/java/org/army/shop/sales/bl/impl/SalesServiceBLImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-management-system-parent/inventory-api/src/main/java/org/army/shop/inventory/client/SupplierServiceClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/army/shop/common/conf/ApplicationConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/army/shop/common/conf/ApplicationConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/army/shop/common/dao/CommonDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/army/shop/common/dao/CommonDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/army/shop/common/dao/impl/CommonDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/org/army/shop/common/dao/impl/CommonDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/bl/InventoryBL.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/bl/InventoryBL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/bl/SupplierBL.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/bl/SupplierBL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/bl/impl/InventoryBLImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/bl/impl/InventoryBLImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/bl/impl/SupplierBLImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/bl/impl/SupplierBLImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/service/InventoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/service/InventoryServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/service/SupplierServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/service/SupplierServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/util/InventoryToEntityTransformer.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/util/InventoryToEntityTransformer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sales/src/main/java/org/army/shop/sales/bl/SalesServiceBL.java" beforeDir="false" afterPath="$PROJECT_DIR$/sales/src/main/java/org/army/shop/sales/bl/SalesServiceBL.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sales/src/main/java/org/army/shop/sales/service/PurchaseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/sales/src/main/java/org/army/shop/sales/service/PurchaseServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sales/src/main/java/org/army/shop/sales/service/SalesServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/sales/src/main/java/org/army/shop/sales/service/SalesServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sales/src/main/java/org/army/shop/sales/to/ProductCategoryRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/sales/src/main/java/org/army/shop/common/to/ProductCategoryRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sales/src/main/java/org/army/shop/sales/to/ProductRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/sales/src/main/java/org/army/shop/common/to/ProductRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sales/src/main/java/org/army/shop/sales/to/ProductTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/sales/src/main/java/org/army/shop/common/to/ProductTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sales/src/main/java/org/army/shop/sales/to/PurchaseRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/sales/src/main/java/org/army/shop/common/to/PurchaseRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sales/src/main/java/org/army/shop/sales/to/SalesRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/sales/src/main/java/org/army/shop/common/to/SalesRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sales/src/main/java/org/army/shop/sales/to/SalesResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/sales/src/main/java/org/army/shop/common/to/SalesResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-management-system-parent/common-api/src/main/java/org/army/shop/sales/to/AddressTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-management-system-parent/common-api/src/main/java/org/army/shop/common/to/AddressTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-management-system-parent/common-api/src/main/java/org/army/shop/sales/to/AmendmentDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-management-system-parent/common-api/src/main/java/org/army/shop/common/to/AmendmentDefinition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-management-system-parent/common-api/src/main/java/org/army/shop/sales/to/BaseRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-management-system-parent/common-api/src/main/java/org/army/shop/common/to/BaseRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-management-system-parent/common-api/src/main/java/org/army/shop/sales/to/BaseResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-management-system-parent/common-api/src/main/java/org/army/shop/common/to/BaseResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-management-system-parent/common-api/src/main/java/org/army/shop/sales/to/BaseTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-management-system-parent/common-api/src/main/java/org/army/shop/common/to/BaseTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-management-system-parent/common-api/src/main/java/org/army/shop/sales/to/NameTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-management-system-parent/common-api/src/main/java/org/army/shop/common/to/NameTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-management-system-parent/common-api/src/main/java/org/army/shop/sales/to/PrimaryContactInformationTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-management-system-parent/common-api/src/main/java/org/army/shop/common/to/PrimaryContactInformationTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-management-system-parent/common-api/src/main/java/org/army/shop/sales/to/SecondaryContactInformationTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-management-system-parent/common-api/src/main/java/org/army/shop/common/to/SecondaryContactInformationTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-management-system-parent/common-api/src/main/java/org/army/shop/sales/to/ValueDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-management-system-parent/common-api/src/main/java/org/army/shop/common/to/ValueDefinition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-management-system-parent/inventory-api/src/main/java/org/army/shop/inventory/api/InventoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-management-system-parent/inventory-api/src/main/java/org/army/shop/inventory/api/InventoryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-management-system-parent/inventory-api/src/main/java/org/army/shop/inventory/api/SupplierService.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-management-system-parent/inventory-api/src/main/java/org/army/shop/inventory/api/SupplierService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-management-system-parent/inventory-api/src/main/java/org/army/shop/inventory/to/InventorySupplyItemBatchTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-management-system-parent/inventory-api/src/main/java/org/army/shop/inventory/to/InventorySupplyItemBatchTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-management-system-parent/inventory-api/src/main/java/org/army/shop/inventory/to/InventorySupplyRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-management-system-parent/inventory-api/src/main/java/org/army/shop/inventory/to/InventorySupplyRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-management-system-parent/inventory-api/src/main/java/org/army/shop/inventory/to/ItemBatchTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-management-system-parent/inventory-api/src/main/java/org/army/shop/inventory/to/ItemBatchTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-management-system-parent/inventory-api/src/main/java/org/army/shop/inventory/to/ItemBrandTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-management-system-parent/inventory-api/src/main/java/org/army/shop/inventory/to/ItemBrandTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-management-system-parent/inventory-api/src/main/java/org/army/shop/inventory/to/ItemCategoryTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-management-system-parent/inventory-api/src/main/java/org/army/shop/inventory/to/ItemCategoryTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-management-system-parent/inventory-api/src/main/java/org/army/shop/inventory/to/SupplierTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-management-system-parent/inventory-api/src/main/java/org/army/shop/inventory/to/SupplierTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-management-system-parent/organization-api/src/main/java/org/army/shop/organization/to/BranchTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-management-system-parent/organization-api/src/main/java/org/army/shop/organization/to/BranchTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-management-system-parent/organization-api/src/main/java/org/army/shop/organization/to/UserTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-management-system-parent/organization-api/src/main/java/org/army/shop/organization/to/UserTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-management-system-parent/sales-api/src/main/java/org/army/shop/sales/api/PurchaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-management-system-parent/sales-api/src/main/java/org/army/shop/sales/api/PurchaseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sales/src/main/java/org/army/shop/sales/to/ProductCategoryRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sales/src/main/java/org/army/shop/sales/to/ProductRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sales/src/main/java/org/army/shop/sales/to/ProductTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sales/src/main/java/org/army/shop/sales/to/PurchaseRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sales/src/main/java/org/army/shop/sales/to/SalesRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sales/src/main/java/org/army/shop/sales/to/SalesResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-management-system-parent/inventory-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shop-management-system-parent/inventory-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-management-system-parent/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shop-management-system-parent/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop-management-system-parent/sales-api/src/main/java/org/army/shop/sales/api/SalesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-management-system-parent/sales-api/src/main/java/org/army/shop/sales/api/SalesService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-management-system-parent/sales-api/src/main/java/org/army/shop/sales/to/AmendmentTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-management-system-parent/sales-api/src/main/java/org/army/shop/common/to/AmendmentTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-management-system-parent/sales-api/src/main/java/org/army/shop/sales/to/CancelTransactionRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-management-system-parent/sales-api/src/main/java/org/army/shop/common/to/CancelTransactionRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-management-system-parent/sales-api/src/main/java/org/army/shop/sales/to/InvoiceItemTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-management-system-parent/sales-api/src/main/java/org/army/shop/common/to/InvoiceItemTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-management-system-parent/sales-api/src/main/java/org/army/shop/sales/to/InvoiceTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-management-system-parent/sales-api/src/main/java/org/army/shop/common/to/InvoiceTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-management-system-parent/sales-api/src/main/java/org/army/shop/sales/to/PurchaseInvoiceTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-management-system-parent/sales-api/src/main/java/org/army/shop/common/to/PurchaseInvoiceTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-management-system-parent/sales-api/src/main/java/org/army/shop/sales/to/PurchaseRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-management-system-parent/sales-api/src/main/java/org/army/shop/common/to/PurchaseRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-management-system-parent/sales-api/src/main/java/org/army/shop/sales/to/RateTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-management-system-parent/sales-api/src/main/java/org/army/shop/common/to/RateTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-management-system-parent/sales-api/src/main/java/org/army/shop/sales/to/SalesCalculationResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-management-system-parent/sales-api/src/main/java/org/army/shop/common/to/SalesCalculationResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-management-system-parent/sales-api/src/main/java/org/army/shop/sales/to/SalesInvoiceTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-management-system-parent/sales-api/src/main/java/org/army/shop/common/to/SalesInvoiceTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-management-system-parent/sales-api/src/main/java/org/army/shop/sales/to/SalesRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-management-system-parent/sales-api/src/main/java/org/army/shop/common/to/SalesRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-management-system-parent/sales-api/src/main/java/org/army/shop/sales/to/InvoiceItemTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-management-system-parent/sales-api/src/main/java/org/army/shop/sales/to/InvoiceItemTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-management-system-parent/sales-api/src/main/java/org/army/shop/sales/to/PurchaseInvoiceTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-management-system-parent/sales-api/src/main/java/org/army/shop/sales/to/PurchaseInvoiceTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-management-system-parent/shop-management-base-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shop-management-system-parent/shop-management-base-service/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/common/target/" />
     <ignored path="$PROJECT_DIR$/sales/target/" />
@@ -69,6 +38,7 @@
     <ignored path="$PROJECT_DIR$/shop-management-system-parent/common-api/target/" />
     <ignored path="$PROJECT_DIR$/shop-management-system-parent/organization-api/target/" />
     <ignored path="$PROJECT_DIR$/shop-management-system-application/target/" />
+    <ignored path="$PROJECT_DIR$/shop-management-system-parent/base-api/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,9 +62,9 @@
         <counts>
           <entry key="class" value="5" />
           <entry key="gitignore" value="1" />
-          <entry key="java" value="359" />
-          <entry key="pom" value="2" />
-          <entry key="xml" value="43" />
+          <entry key="java" value="399" />
+          <entry key="pom" value="4" />
+          <entry key="xml" value="52" />
           <entry key="yaml" value="3" />
           <entry key="yml" value="5" />
         </counts>
@@ -102,26 +72,26 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="5" />
-          <entry key="JAVA" value="359" />
+          <entry key="JAVA" value="399" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="XML" value="45" />
+          <entry key="XML" value="56" />
           <entry key="YAML" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="90" />
-          <entry key="java" value="6086" />
-          <entry key="xml" value="154" />
+          <entry key="java" value="6283" />
+          <entry key="xml" value="182" />
           <entry key="yaml" value="150" />
           <entry key="yml" value="129" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="6086" />
+          <entry key="JAVA" value="6283" />
           <entry key="PLAIN_TEXT" value="90" />
-          <entry key="XML" value="154" />
+          <entry key="XML" value="182" />
           <entry key="YAML" value="279" />
         </counts>
       </usages-collector>
@@ -133,78 +103,100 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/entity/ItemBatch.java">
+        <entry file="file://$PROJECT_DIR$/sales/src/main/java/org/army/shop/sales/service/PurchaseServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="54" column="18" lean-forward="true" selection-start-line="54" selection-start-column="18" selection-end-line="54" selection-end-column="18" />
-              <folding>
-                <element signature="e#2002#2003#0" expanded="true" />
-                <element signature="e#2031#2032#0" expanded="true" />
-                <element signature="e#2074#2075#0" expanded="true" />
-                <element signature="e#2110#2111#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="315">
+              <caret line="28" column="54" selection-start-line="28" selection-start-column="54" selection-end-line="28" selection-end-column="54" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/entity/ItemBatchStock.java">
+        <entry file="file://$PROJECT_DIR$/sales/src/main/java/org/army/shop/sales/bl/impl/PurchaseServiceBLImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/util/InventoryUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
+            <state relative-caret-position="225">
+              <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#496#497#0" expanded="true" />
+                <element signature="e#523#524#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/service/SupplierServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/sales/src/main/java/org/army/shop/sales/service/SalesServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="45" column="29" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/bl/impl/SupplierBLImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="356">
-              <caret line="62" column="17" selection-start-line="62" selection-start-column="17" selection-end-line="62" selection-end-column="17" />
+            <state relative-caret-position="405">
+              <caret line="35" column="47" selection-start-line="35" selection-start-column="47" selection-end-line="35" selection-end-column="47" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#885#886#0" expanded="true" />
+                <element signature="e#903#904#0" expanded="true" />
+                <element signature="e#1116#1117#0" expanded="true" />
+                <element signature="e#1134#1135#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shop-management-system-parent/sales-api/src/main/java/org/army/shop/sales/api/SalesService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="9" selection-start-line="9" selection-end-line="13" selection-end-column="61" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shop-management-system-parent/inventory-api/src/main/java/org/army/shop/inventory/client/SupplierServiceClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shop-management-system-parent/shop-management-base-service/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="570">
+              <caret line="39" selection-start-line="39" selection-end-line="42" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/bl/impl/InventoryBLImpl.java">
+        <entry file="file://$PROJECT_DIR$/shop-management-system-parent/inventory-api/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="71" column="22" selection-start-line="71" selection-start-column="22" selection-end-line="71" selection-end-column="22" />
+            <state relative-caret-position="300">
+              <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shop-management-system-application/src/main/resources/application.yml">
+        <entry file="file://$PROJECT_DIR$/shop-management-system-parent/base-api/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="20" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="20" />
+            <state relative-caret-position="90">
+              <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shop-management-system-parent/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shop-management-system-parent/common-api/pom.xml">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -226,6 +218,10 @@
       <find>profitPercentage</find>
       <find>percen</find>
       <find>profitperc</find>
+      <find>spring-boot-dependencies</find>
+      <find>feign</find>
+      <find>spring-cloud-openfeign.version</find>
+      <find>spring-cloud-openfeign-dependencies</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -245,25 +241,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/shop-management-system-application/pom.xml" />
-        <option value="$PROJECT_DIR$/shop-management-system-application/src/main/java/org/army/shop/SwaggerConfiguration.java" />
-        <option value="$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/dao/InventoryRepository.java" />
-        <option value="$PROJECT_DIR$/sales/src/main/resources/sales.yaml" />
-        <option value="$PROJECT_DIR$/shop-management-system-application/src/main/java/org/army/shop/conf/SwaggerConfiguration.java" />
-        <option value="$PROJECT_DIR$/common/pom.xml" />
-        <option value="$PROJECT_DIR$/common/src/main/java/org/army/shop/common/conf/SalesConfiguration.java" />
-        <option value="$PROJECT_DIR$/common/src/main/resources/sales.yml" />
-        <option value="$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/dao/SupplierDAO.java" />
-        <option value="$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/dao/impl/SupplierDAOImpl.java" />
-        <option value="$PROJECT_DIR$/shop-management-system-parent/inventory-api/src/main/java/org/army/shop/inventory/to/InventorySearchResponse.java" />
-        <option value="$PROJECT_DIR$/sales/src/main/java/org/army/shop/sales/service/SalesServiceImpl.java" />
-        <option value="$PROJECT_DIR$/sales/src/main/java/org/army/shop/sales/service/PurchaseServiceImpl.java" />
         <option value="$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/dao/InventoryDAO.java" />
         <option value="$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/util/InventoryContants.java" />
         <option value="$PROJECT_DIR$/shop-management-system-parent/inventory-api/src/main/java/org/army/shop/inventory/to/InventorySearchRequest.java" />
         <option value="$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/to/InventorySearchTO.java" />
         <option value="$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/util/InventoryConstants.java" />
-        <option value="$PROJECT_DIR$/shop-management-system-parent/shop-management-base-service/pom.xml" />
         <option value="$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/dao/impl/InventoryDAOImpl.java" />
         <option value="$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/dao/SupplierRepository.java" />
         <option value="$PROJECT_DIR$/shop-management-system-parent/common-api/src/main/java/org/army/shop/sales/to/BaseResponse.java" />
@@ -296,6 +278,20 @@
         <option value="$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/util/InventoryUtils.java" />
         <option value="$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/bl/impl/SupplierBLImpl.java" />
         <option value="$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/bl/impl/InventoryBLImpl.java" />
+        <option value="$PROJECT_DIR$/shop-management-system-parent/shop-management-base-service/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/shop-management-system-parent/sales-api/src/main/java/org/army/shop/sales/to/PurchaseInvoiceTO.java" />
+        <option value="$PROJECT_DIR$/shop-management-system-parent/sales-api/src/main/java/org/army/shop/sales/to/InvoiceItemTO.java" />
+        <option value="$PROJECT_DIR$/sales/src/main/java/org/army/shop/sales/bl/PurchaseServiceBL.java" />
+        <option value="$PROJECT_DIR$/sales/src/main/java/org/army/shop/sales/bl/impl/PurchaseServiceBLImpl.java" />
+        <option value="$PROJECT_DIR$/sales/src/main/java/org/army/shop/sales/bl/impl/SalesServiceBLImpl.java" />
+        <option value="$PROJECT_DIR$/sales/src/main/java/org/army/shop/sales/bl/SalesServiceBL.java" />
+        <option value="$PROJECT_DIR$/sales/src/main/java/org/army/shop/sales/service/SalesServiceImpl.java" />
+        <option value="$PROJECT_DIR$/sales/src/main/java/org/army/shop/sales/service/PurchaseServiceImpl.java" />
+        <option value="$PROJECT_DIR$/shop-management-system-parent/inventory-api/src/main/java/org/army/shop/inventory/client/SupplierServiceClient.java" />
+        <option value="$PROJECT_DIR$/shop-management-system-parent/base-api/pom.xml" />
+        <option value="$PROJECT_DIR$/shop-management-system-parent/pom.xml" />
+        <option value="$PROJECT_DIR$/shop-management-system-parent/inventory-api/pom.xml" />
       </list>
     </option>
   </component>
@@ -333,61 +329,6 @@
             <path>
               <item name="shop-management-system" type="b2602c69:ProjectViewProjectNode" />
               <item name="ims" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-management-system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ims" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-management-system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ims" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-management-system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ims" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-management-system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ims" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-management-system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ims" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="conf" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-management-system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ims" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-management-system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ims" type="462c0819:PsiDirectoryNode" />
               <item name="inventory" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -419,58 +360,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="inventory" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-management-system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ims" type="462c0819:PsiDirectoryNode" />
-              <item name="inventory" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="inventory" type="462c0819:PsiDirectoryNode" />
-              <item name="bl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-management-system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ims" type="462c0819:PsiDirectoryNode" />
-              <item name="inventory" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="inventory" type="462c0819:PsiDirectoryNode" />
-              <item name="bl" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-management-system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ims" type="462c0819:PsiDirectoryNode" />
-              <item name="inventory" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="inventory" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-management-system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ims" type="462c0819:PsiDirectoryNode" />
-              <item name="inventory" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="inventory" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-management-system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ims" type="462c0819:PsiDirectoryNode" />
-              <item name="inventory" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="inventory" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shop-management-system" type="b2602c69:ProjectViewProjectNode" />
@@ -485,45 +374,25 @@
             <path>
               <item name="shop-management-system" type="b2602c69:ProjectViewProjectNode" />
               <item name="ims" type="462c0819:PsiDirectoryNode" />
-              <item name="inventory" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="inventory" type="462c0819:PsiDirectoryNode" />
-              <item name="to" type="462c0819:PsiDirectoryNode" />
+              <item name="sales" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shop-management-system" type="b2602c69:ProjectViewProjectNode" />
               <item name="ims" type="462c0819:PsiDirectoryNode" />
-              <item name="inventory" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="inventory" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-management-system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ims" type="462c0819:PsiDirectoryNode" />
-              <item name="organization" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-management-system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ims" type="462c0819:PsiDirectoryNode" />
-              <item name="organization" type="462c0819:PsiDirectoryNode" />
+              <item name="sales" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shop-management-system" type="b2602c69:ProjectViewProjectNode" />
               <item name="ims" type="462c0819:PsiDirectoryNode" />
-              <item name="organization" type="462c0819:PsiDirectoryNode" />
+              <item name="sales" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shop-management-system" type="b2602c69:ProjectViewProjectNode" />
               <item name="ims" type="462c0819:PsiDirectoryNode" />
-              <item name="organization" type="462c0819:PsiDirectoryNode" />
+              <item name="sales" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -531,34 +400,84 @@
             <path>
               <item name="shop-management-system" type="b2602c69:ProjectViewProjectNode" />
               <item name="ims" type="462c0819:PsiDirectoryNode" />
-              <item name="organization" type="462c0819:PsiDirectoryNode" />
+              <item name="sales" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sales" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop-management-system" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ims" type="462c0819:PsiDirectoryNode" />
+              <item name="sales" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sales" type="462c0819:PsiDirectoryNode" />
+              <item name="bl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop-management-system" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ims" type="462c0819:PsiDirectoryNode" />
+              <item name="sales" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sales" type="462c0819:PsiDirectoryNode" />
+              <item name="bl" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop-management-system" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ims" type="462c0819:PsiDirectoryNode" />
+              <item name="sales" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sales" type="462c0819:PsiDirectoryNode" />
               <item name="entity" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shop-management-system" type="b2602c69:ProjectViewProjectNode" />
               <item name="ims" type="462c0819:PsiDirectoryNode" />
               <item name="sales" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sales" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shop-management-system" type="b2602c69:ProjectViewProjectNode" />
               <item name="ims" type="462c0819:PsiDirectoryNode" />
-              <item name="sales" type="462c0819:PsiDirectoryNode" />
+              <item name="shop-management-system-parent" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop-management-system" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ims" type="462c0819:PsiDirectoryNode" />
+              <item name="shop-management-system-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="base-api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop-management-system" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ims" type="462c0819:PsiDirectoryNode" />
+              <item name="shop-management-system-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="base-api" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shop-management-system" type="b2602c69:ProjectViewProjectNode" />
               <item name="ims" type="462c0819:PsiDirectoryNode" />
-              <item name="sales" type="462c0819:PsiDirectoryNode" />
+              <item name="shop-management-system-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="base-api" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shop-management-system" type="b2602c69:ProjectViewProjectNode" />
               <item name="ims" type="462c0819:PsiDirectoryNode" />
-              <item name="sales" type="462c0819:PsiDirectoryNode" />
+              <item name="shop-management-system-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="base-api" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -566,25 +485,29 @@
             <path>
               <item name="shop-management-system" type="b2602c69:ProjectViewProjectNode" />
               <item name="ims" type="462c0819:PsiDirectoryNode" />
-              <item name="shop-management-system-application" type="462c0819:PsiDirectoryNode" />
+              <item name="shop-management-system-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="common-api" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shop-management-system" type="b2602c69:ProjectViewProjectNode" />
               <item name="ims" type="462c0819:PsiDirectoryNode" />
-              <item name="shop-management-system-application" type="462c0819:PsiDirectoryNode" />
+              <item name="shop-management-system-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="common-api" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shop-management-system" type="b2602c69:ProjectViewProjectNode" />
               <item name="ims" type="462c0819:PsiDirectoryNode" />
-              <item name="shop-management-system-application" type="462c0819:PsiDirectoryNode" />
+              <item name="shop-management-system-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="common-api" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shop-management-system" type="b2602c69:ProjectViewProjectNode" />
               <item name="ims" type="462c0819:PsiDirectoryNode" />
-              <item name="shop-management-system-application" type="462c0819:PsiDirectoryNode" />
+              <item name="shop-management-system-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="common-api" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -592,7 +515,8 @@
             <path>
               <item name="shop-management-system" type="b2602c69:ProjectViewProjectNode" />
               <item name="ims" type="462c0819:PsiDirectoryNode" />
-              <item name="shop-management-system-application" type="462c0819:PsiDirectoryNode" />
+              <item name="shop-management-system-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="common-api" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -601,75 +525,12 @@
             <path>
               <item name="shop-management-system" type="b2602c69:ProjectViewProjectNode" />
               <item name="ims" type="462c0819:PsiDirectoryNode" />
-              <item name="shop-management-system-application" type="462c0819:PsiDirectoryNode" />
+              <item name="shop-management-system-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="common-api" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="shop" type="462c0819:PsiDirectoryNode" />
-              <item name="conf" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-management-system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ims" type="462c0819:PsiDirectoryNode" />
-              <item name="shop-management-system-application" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-management-system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ims" type="462c0819:PsiDirectoryNode" />
-              <item name="shop-management-system-parent" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-management-system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ims" type="462c0819:PsiDirectoryNode" />
-              <item name="shop-management-system-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="common-api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-management-system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ims" type="462c0819:PsiDirectoryNode" />
-              <item name="shop-management-system-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="common-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-management-system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ims" type="462c0819:PsiDirectoryNode" />
-              <item name="shop-management-system-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="common-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-management-system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ims" type="462c0819:PsiDirectoryNode" />
-              <item name="shop-management-system-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="common-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-management-system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ims" type="462c0819:PsiDirectoryNode" />
-              <item name="shop-management-system-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="common-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-management-system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ims" type="462c0819:PsiDirectoryNode" />
-              <item name="shop-management-system-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="common-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
               <item name="to" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -732,6 +593,46 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="inventory" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop-management-system" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ims" type="462c0819:PsiDirectoryNode" />
+              <item name="shop-management-system-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="organization-api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop-management-system" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ims" type="462c0819:PsiDirectoryNode" />
+              <item name="shop-management-system-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="organization-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop-management-system" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ims" type="462c0819:PsiDirectoryNode" />
+              <item name="shop-management-system-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="organization-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop-management-system" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ims" type="462c0819:PsiDirectoryNode" />
+              <item name="shop-management-system-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="organization-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop-management-system" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ims" type="462c0819:PsiDirectoryNode" />
+              <item name="shop-management-system-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="organization-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="to" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -768,117 +669,52 @@
               <item name="shop-management-system" type="b2602c69:ProjectViewProjectNode" />
               <item name="ims" type="462c0819:PsiDirectoryNode" />
               <item name="shop-management-system-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="sales-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="shop" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop-management-system" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ims" type="462c0819:PsiDirectoryNode" />
+              <item name="shop-management-system-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="sales-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="shop" type="462c0819:PsiDirectoryNode" />
+              <item name="sales" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop-management-system" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ims" type="462c0819:PsiDirectoryNode" />
+              <item name="shop-management-system-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="sales-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="shop" type="462c0819:PsiDirectoryNode" />
+              <item name="sales" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop-management-system" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ims" type="462c0819:PsiDirectoryNode" />
+              <item name="shop-management-system-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="sales-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="shop" type="462c0819:PsiDirectoryNode" />
+              <item name="sales" type="462c0819:PsiDirectoryNode" />
+              <item name="to" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop-management-system" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ims" type="462c0819:PsiDirectoryNode" />
+              <item name="shop-management-system-parent" type="462c0819:PsiDirectoryNode" />
               <item name="shop-management-base-service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-management-system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="shop-management-system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="shop-management-system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-management-system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-management-system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-management-system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-              <item name="concurrent" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-management-system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-              <item name="concurrent" type="462c0819:PsiDirectoryNode" />
-              <item name="atomic" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-management-system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.hibernate.javax.persistence:hibernate-jpa-2.1-api:1.0.0.Final" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="shop-management-system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.hibernate.javax.persistence:hibernate-jpa-2.1-api:1.0.0.Final" type="70bed36:NamedLibraryElementNode" />
-              <item name="hibernate-jpa-2.1-api-1.0.0.Final.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-management-system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.hibernate.javax.persistence:hibernate-jpa-2.1-api:1.0.0.Final" type="70bed36:NamedLibraryElementNode" />
-              <item name="hibernate-jpa-2.1-api-1.0.0.Final.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="persistence" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-management-system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.hibernate.javax.persistence:hibernate-jpa-2.1-api:1.0.0.Final" type="70bed36:NamedLibraryElementNode" />
-              <item name="hibernate-jpa-2.1-api-1.0.0.Final.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="persistence" type="462c0819:PsiDirectoryNode" />
-              <item name="criteria" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-management-system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework.data:spring-data-jpa:2.0.6.RELEASE" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="shop-management-system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework.data:spring-data-jpa:2.0.6.RELEASE" type="70bed36:NamedLibraryElementNode" />
-              <item name="spring-data-jpa-2.0.6.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-management-system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework.data:spring-data-jpa:2.0.6.RELEASE" type="70bed36:NamedLibraryElementNode" />
-              <item name="spring-data-jpa-2.0.6.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="jpa" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-management-system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework.data:spring-data-jpa:2.0.6.RELEASE" type="70bed36:NamedLibraryElementNode" />
-              <item name="spring-data-jpa-2.0.6.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="jpa" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-management-system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework.data:spring-data-jpa:2.0.6.RELEASE" type="70bed36:NamedLibraryElementNode" />
-              <item name="spring-data-jpa-2.0.6.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="jpa" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-              <item name="support" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -896,7 +732,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537954722346" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537958352015" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/shop-management-system-parent/organization-api/pom.xml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -910,13 +746,14 @@
       <recent name="org.army.shop" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/shop-management-system-parent/organization-api/src/main/java/org/army/shop/organization/to" />
       <recent name="$PROJECT_DIR$/shop-management-system-parent" />
+      <recent name="$PROJECT_DIR$/shop-management-system-parent/organization-api/src/main/java/org/army/shop/organization/to" />
       <recent name="$PROJECT_DIR$/shop-management-system-parent/sales-api/src/main/java/org/army/shop/common/to" />
       <recent name="$PROJECT_DIR$/shop-management-system-parent/common-api/src/main/java/org/army/shop/common/to" />
       <recent name="$PROJECT_DIR$/shop-management-system-parent/inventory-api/src/main/java/org/army/shop/inventory/to" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.army.shop.inventory.client" />
       <recent name="org.army.shop.inventory.dao.impl" />
       <recent name="org.army.shop.common.to" />
     </key>
@@ -965,12 +802,12 @@
       <workItem from="1537819093091" duration="5697000" />
       <workItem from="1537838969881" duration="1966000" />
       <workItem from="1537851478941" duration="214000" />
-      <workItem from="1537931284003" duration="14004000" />
+      <workItem from="1537931284003" duration="17369000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54701000" />
+    <option name="totallyTimeSpent" value="58066000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="26" width="1920" height="1053" extended-state="6" />
@@ -985,9 +822,9 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3286638" />
+      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.14439656" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3900862" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.27370688" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.27370688" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -1017,395 +854,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sales/src/main/java/org/army/shop/sales/service/SalesServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="28" column="29" lean-forward="true" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
-          <folding>
-            <element signature="e#820#821#0" expanded="true" />
-            <element signature="e#838#839#0" expanded="true" />
-            <element signature="e#898#899#0" expanded="true" />
-            <element signature="e#916#917#0" expanded="true" />
-            <element signature="e#995#996#0" expanded="true" />
-            <element signature="e#1013#1014#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/dao/InventoryDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="62" selection-start-line="10" selection-start-column="62" selection-end-line="10" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/dao/SupplierDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop-management-system-parent/inventory-api/src/main/java/org/army/shop/inventory/to/InventorySearchResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="27" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/org/army/shop/common/entity/ItemQuantity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="10" column="31" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/organization/src/main/java/org/army/shop/organization/entity/Branch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop-management-system-parent/inventory-api/src/main/java/org/army/shop/inventory/to/InventorySearchRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="6" />
-          <folding>
-            <element signature="e#393#394#0" expanded="true" />
-            <element signature="e#424#425#0" expanded="true" />
-            <element signature="e#470#471#0" expanded="true" />
-            <element signature="e#510#511#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/to/InventorySearchTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
-          <folding>
-            <element signature="e#263#264#0" expanded="true" />
-            <element signature="e#309#310#0" expanded="true" />
-            <element signature="e#349#350#0" expanded="true" />
-            <element signature="e#221#222#0" expanded="true" />
-            <element signature="e#260#261#0" expanded="true" />
-            <element signature="e#330#331#0" expanded="true" />
-            <element signature="e#386#387#0" expanded="true" />
-            <element signature="e#428#429#0" expanded="true" />
-            <element signature="e#460#461#0" expanded="true" />
-            <element signature="e#516#517#0" expanded="true" />
-            <element signature="e#558#559#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop-management-system-parent/shop-management-base-service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/apps/java/jdk1.8.0_181/src.zip!/java/util/concurrent/atomic/AtomicInteger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="184" column="21" selection-start-line="184" selection-start-column="21" selection-end-line="184" selection-end-column="21" />
-          <folding>
-            <element signature="e#4725#4726#0" expanded="true" />
-            <element signature="e#4793#4794#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/dao/impl/InventoryDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="64" column="50" selection-start-line="64" selection-start-column="50" selection-end-line="64" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/dao/SupplierRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="46" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-jpa/2.0.6.RELEASE/spring-data-jpa-2.0.6.RELEASE.jar!/org/springframework/data/jpa/repository/support/SimpleJpaRepository.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="411" column="57" selection-start-line="411" selection-start-column="52" selection-end-line="411" selection-end-column="57" />
-          <folding>
-            <element signature="e#8133#8134#0" expanded="true" />
-            <element signature="e#8229#8230#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-jpa/2.0.6.RELEASE/spring-data-jpa-2.0.6.RELEASE.jar!/org/springframework/data/jpa/repository/JpaRepository.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar!/javax/persistence/criteria/AbstractQuery.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar!/javax/persistence/criteria/CriteriaQuery.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="10" column="49" lean-forward="true" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar!/javax/persistence/criteria/CriteriaBuilder.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/dao/impl/SupplierDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop-management-system-parent/common-api/src/main/java/org/army/shop/common/to/BaseResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-          <folding>
-            <element signature="e#122#123#0" expanded="true" />
-            <element signature="e#153#154#0" expanded="true" />
-            <element signature="e#127#128#0" expanded="true" />
-            <element signature="e#157#158#0" expanded="true" />
-            <element signature="e#204#205#0" expanded="true" />
-            <element signature="e#242#243#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/org/army/shop/common/conf/ApplicationConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" selection-start-line="14" selection-end-line="14" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/org/army/shop/common/entity/Address.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/entity/ItemCategory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="497">
-          <caret line="58" column="30" selection-start-line="58" selection-start-column="30" selection-end-line="58" selection-end-column="30" />
-          <folding>
-            <element signature="e#1612#1613#0" expanded="true" />
-            <element signature="e#1655#1656#0" expanded="true" />
-            <element signature="e#1691#1692#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/bl/SupplierBL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="14" column="53" selection-start-line="14" selection-start-column="53" selection-end-line="14" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop-management-system-parent/inventory-api/src/main/java/org/army/shop/inventory/api/InventoryService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="12" selection-start-line="12" selection-end-line="20" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/service/InventoryServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="23" column="17" lean-forward="true" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1915#1916#0" expanded="true" />
-            <element signature="e#1942#1943#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/bl/InventoryBL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/util/InventoryToTOTransformer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="30" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop-management-system-parent/inventory-api/src/main/java/org/army/shop/inventory/to/BaseItemBatchTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop-management-system-parent/inventory-api/src/main/java/org/army/shop/inventory/to/ItemBatchTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
-          <folding>
-            <element signature="e#523#524#0" expanded="true" />
-            <element signature="e#575#576#0" expanded="true" />
-            <element signature="e#621#622#0" expanded="true" />
-            <element signature="e#663#664#0" expanded="true" />
-            <element signature="e#692#693#0" expanded="true" />
-            <element signature="e#745#746#0" expanded="true" />
-            <element signature="e#781#782#0" expanded="true" />
-            <element signature="e#822#823#0" expanded="true" />
-            <element signature="e#854#855#0" expanded="true" />
-            <element signature="e#909#910#0" expanded="true" />
-            <element signature="e#951#952#0" expanded="true" />
-            <element signature="e#997#998#0" expanded="true" />
-            <element signature="e#1034#1035#0" expanded="true" />
-            <element signature="e#1099#1100#0" expanded="true" />
-            <element signature="e#1151#1152#0" expanded="true" />
-            <element signature="e#1190#1191#0" expanded="true" />
-            <element signature="e#1221#1222#0" expanded="true" />
-            <element signature="e#1273#1274#0" expanded="true" />
-            <element signature="e#1313#1314#0" expanded="true" />
-            <element signature="e#1364#1365#0" expanded="true" />
-            <element signature="e#1403#1404#0" expanded="true" />
-            <element signature="e#1475#1476#0" expanded="true" />
-            <element signature="e#1531#1532#0" expanded="true" />
-            <element signature="e#1573#1574#0" expanded="true" />
-            <element signature="e#1601#1602#0" expanded="true" />
-            <element signature="e#1653#1654#0" expanded="true" />
-            <element signature="e#1687#1688#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop-management-system-parent/inventory-api/src/main/java/org/army/shop/inventory/to/ItemCategoryTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="45" column="40" selection-start-line="45" selection-start-column="40" selection-end-line="45" selection-end-column="40" />
-          <folding>
-            <element signature="e#1024#1025#0" expanded="true" />
-            <element signature="e#1077#1078#0" expanded="true" />
-            <element signature="e#1113#1114#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop-management-system-parent/inventory-api/src/main/java/org/army/shop/inventory/api/SupplierService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop-management-system-parent/inventory-api/src/main/java/org/army/shop/inventory/to/InventorySupplyItemBatchTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding>
-            <element signature="e#393#394#0" expanded="true" />
-            <element signature="e#422#423#0" expanded="true" />
-            <element signature="e#475#476#0" expanded="true" />
-            <element signature="e#511#512#0" expanded="true" />
-            <element signature="e#547#548#0" expanded="true" />
-            <element signature="e#581#582#0" expanded="true" />
-            <element signature="e#633#634#0" expanded="true" />
-            <element signature="e#679#680#0" expanded="true" />
-            <element signature="e#731#732#0" expanded="true" />
-            <element signature="e#771#772#0" expanded="true" />
-            <element signature="e#845#846#0" expanded="true" />
-            <element signature="e#903#904#0" expanded="true" />
-            <element signature="e#949#950#0" expanded="true" />
-            <element signature="e#986#987#0" expanded="true" />
-            <element signature="e#1051#1052#0" expanded="true" />
-            <element signature="e#1103#1104#0" expanded="true" />
-            <element signature="e#1154#1155#0" expanded="true" />
-            <element signature="e#1193#1194#0" expanded="true" />
-            <element signature="e#1265#1266#0" expanded="true" />
-            <element signature="e#1321#1322#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop-management-system-parent/inventory-api/src/main/java/org/army/shop/inventory/to/ItemBrandTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="45" column="40" selection-start-line="45" selection-start-column="40" selection-end-line="45" selection-end-column="40" />
-          <folding>
-            <element signature="e#955#956#0" expanded="true" />
-            <element signature="e#1008#1009#0" expanded="true" />
-            <element signature="e#1044#1045#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/org/army/shop/common/dao/CommonDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/org/army/shop/common/dao/impl/CommonDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#548#549#0" expanded="true" />
-            <element signature="e#579#580#0" expanded="true" />
-            <element signature="e#553#554#0" expanded="true" />
-            <element signature="e#576#577#0" expanded="true" />
-            <element signature="e#739#740#0" expanded="true" />
-            <element signature="e#766#767#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/entity/ItemBrand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -1460,7 +908,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shop-management-system-parent/common-api/src/main/java/org/army/shop/common/to/ValueDefinition.java">
+    <entry file="file://$PROJECT_DIR$/shop-management-system-parent/common-api/src/main/java/org/army/shop/sales/to/ValueDefinition.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
@@ -1511,7 +959,7 @@
     <entry file="file://$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/entity/ItemBatch.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
-          <caret line="54" column="18" lean-forward="true" selection-start-line="54" selection-start-column="18" selection-end-line="54" selection-end-column="18" />
+          <caret line="54" column="18" selection-start-line="54" selection-start-column="18" selection-end-line="54" selection-end-column="18" />
           <folding>
             <element signature="e#2002#2003#0" expanded="true" />
             <element signature="e#2031#2032#0" expanded="true" />
@@ -1528,13 +976,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/service/SupplierServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="45" column="29" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/bl/impl/SupplierBLImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="356">
@@ -1547,8 +988,282 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/bl/impl/InventoryBLImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
+        <state relative-caret-position="789">
           <caret line="71" column="22" selection-start-line="71" selection-start-column="22" selection-end-line="71" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop-management-system-parent/sales-api/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop-management-system-parent/sales-api/src/main/java/org/army/shop/sales/to/SalesRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/service/SupplierServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="45" column="29" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sales/src/main/java/org/army/shop/sales/to/ProductTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sales/src/main/java/org/army/shop/sales/to/ProductRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sales/src/main/java/org/army/shop/sales/to/PurchaseRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sales/src/main/java/org/army/shop/sales/to/SalesRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sales/src/main/java/org/army/shop/sales/to/SalesResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sales/src/main/java/org/army/shop/sales/to/ProductCategoryRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop-management-system-parent/sales-api/src/main/java/org/army/shop/sales/to/SalesInvoiceTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-dependencies/2.0.1.RELEASE/spring-boot-dependencies-2.0.1.RELEASE.pom">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="504" column="12" selection-start-line="504" selection-start-column="12" selection-end-line="504" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-dependencies/Finchley.SR1/spring-cloud-dependencies-Finchley.SR1.pom">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="152" column="63" selection-start-line="152" selection-start-column="28" selection-end-line="152" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="45" column="19" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sales/src/main/java/org/army/shop/sales/entity/InvoiceItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop-management-system-parent/inventory-api/src/main/java/org/army/shop/inventory/api/InventoryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop-management-system-parent/inventory-api/src/main/java/org/army/shop/inventory/api/SupplierService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop-management-system-parent/sales-api/src/main/java/org/army/shop/sales/to/PurchaseRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop-management-system-parent/organization-api/src/main/java/org/army/shop/organization/to/UserTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop-management-system-parent/sales-api/src/main/java/org/army/shop/sales/to/InvoiceItemTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="29" column="34" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
+          <folding>
+            <element signature="e#636#637#0" expanded="true" />
+            <element signature="e#688#689#0" expanded="true" />
+            <element signature="e#734#735#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop-management-system-parent/sales-api/src/main/java/org/army/shop/sales/to/PurchaseInvoiceTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="44" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop-management-system-parent/sales-api/src/main/java/org/army/shop/sales/to/InvoiceTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop-management-system-parent/sales-api/src/main/java/org/army/shop/sales/api/PurchaseService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="10" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sales/src/main/java/org/army/shop/sales/bl/PurchaseServiceBL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="65" selection-start-line="10" selection-start-column="65" selection-end-line="10" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sales/src/main/java/org/army/shop/sales/bl/impl/SalesServiceBLImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#482#483#0" expanded="true" />
+            <element signature="e#509#510#0" expanded="true" />
+            <element signature="e#575#576#0" expanded="true" />
+            <element signature="e#602#603#0" expanded="true" />
+            <element signature="e#687#688#0" expanded="true" />
+            <element signature="e#714#715#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sales/src/main/java/org/army/shop/sales/bl/SalesServiceBL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop-management-system-parent/sales-api/src/main/java/org/army/shop/sales/api/SalesService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="9" selection-start-line="9" selection-end-line="13" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sales/src/main/java/org/army/shop/sales/service/SalesServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="35" column="47" selection-start-line="35" selection-start-column="47" selection-end-line="35" selection-end-column="47" />
+          <folding>
+            <element signature="e#885#886#0" expanded="true" />
+            <element signature="e#903#904#0" expanded="true" />
+            <element signature="e#1116#1117#0" expanded="true" />
+            <element signature="e#1134#1135#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sales/src/main/java/org/army/shop/sales/service/PurchaseServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="28" column="54" selection-start-line="28" selection-start-column="54" selection-end-line="28" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sales/src/main/java/org/army/shop/sales/bl/impl/PurchaseServiceBLImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#496#497#0" expanded="true" />
+            <element signature="e#523#524#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop-management-system-parent/inventory-api/src/main/java/org/army/shop/inventory/client/SupplierServiceClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop-management-system-parent/common-api/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop-management-system-parent/shop-management-base-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="39" selection-start-line="39" selection-end-line="42" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop-management-system-parent/base-api/src/main/java/org/army/shop/sales/to/BaseTO.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop-management-system-parent/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop-management-system-parent/base-api/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop-management-system-parent/inventory-api/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
         </state>
       </provider>
     </entry>

@@ -2,33 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2be1aaff-0b36-4aac-af48-1c04ca4d051e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/org/army/shop/common/util/CommonUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sales/src/main/java/org/army/shop/sales/entity/Amendment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop-management-system-parent/inventory-api/src/main/java/org/army/shop/inventory/client/InventoryServiceClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/bl/InventoryBL.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/bl/InventoryBL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/bl/SupplierBL.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/bl/SupplierBL.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/bl/impl/InventoryBLImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/bl/impl/InventoryBLImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/bl/impl/SupplierBLImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/bl/impl/SupplierBLImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/dao/impl/InventoryDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/dao/impl/InventoryDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/entity/ItemBatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/entity/ItemBatch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/entity/ItemBrand.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/entity/ItemBrand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/entity/ItemCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/entity/ItemCategory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/service/InventoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/service/InventoryServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/service/SupplierServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/service/SupplierServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sales/src/main/java/org/army/shop/sales/bl/impl/PurchaseServiceBLImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/sales/src/main/java/org/army/shop/sales/bl/impl/PurchaseServiceBLImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sales/src/main/java/org/army/shop/sales/bl/impl/SalesServiceBLImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/sales/src/main/java/org/army/shop/sales/bl/impl/SalesServiceBLImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sales/src/main/java/org/army/shop/sales/entity/Invoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/sales/src/main/java/org/army/shop/sales/entity/Invoice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sales/src/main/java/org/army/shop/sales/service/PurchaseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/sales/src/main/java/org/army/shop/sales/service/PurchaseServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sales/src/main/java/org/army/shop/sales/service/SalesServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/sales/src/main/java/org/army/shop/sales/service/SalesServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sales/src/main/java/org/army/shop/sales/util/SalesToEntityTransformer.java" beforeDir="false" afterPath="$PROJECT_DIR$/sales/src/main/java/org/army/shop/sales/util/SalesToEntityTransformer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sales/src/main/java/org/army/shop/sales/util/SalesUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/sales/src/main/java/org/army/shop/sales/util/SalesUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-management-system-parent/common-api/src/main/java/org/army/shop/common/CommonConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-management-system-parent/common-api/src/main/java/org/army/shop/common/CommonConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-management-system-parent/inventory-api/src/main/java/org/army/shop/inventory/api/InventoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-management-system-parent/inventory-api/src/main/java/org/army/shop/inventory/api/InventoryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-management-system-parent/inventory-api/src/main/java/org/army/shop/inventory/api/SupplierService.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-management-system-parent/inventory-api/src/main/java/org/army/shop/inventory/api/SupplierService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-management-system-parent/inventory-api/src/main/java/org/army/shop/inventory/client/SupplierServiceClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-management-system-parent/inventory-api/src/main/java/org/army/shop/inventory/client/SupplierServiceClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-management-system-parent/sales-api/src/main/java/org/army/shop/sales/to/AmendmentTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-management-system-parent/sales-api/src/main/java/org/army/shop/sales/to/AmendmentTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-management-system-parent/sales-api/src/main/java/org/army/shop/sales/to/PurchaseInvoiceTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-management-system-parent/sales-api/src/main/java/org/army/shop/sales/to/PurchaseInvoiceTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-management-system-parent/inventory-api/src/main/java/org/army/shop/inventory/to/InventoryAdjustmentItemTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-management-system-parent/inventory-api/src/main/java/org/army/shop/inventory/to/InventoryAdjustmentItemTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-management-system-parent/inventory-api/src/main/java/org/army/shop/inventory/to/InventorySearchRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-management-system-parent/inventory-api/src/main/java/org/army/shop/inventory/to/InventorySearchRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-management-system-parent/inventory-api/src/main/java/org/army/shop/inventory/to/ItemQuantityTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-management-system-parent/inventory-api/src/main/java/org/army/shop/inventory/to/ItemQuantityTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-management-system-parent/sales-api/src/main/java/org/army/shop/sales/to/InvoiceItemTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-management-system-parent/sales-api/src/main/java/org/army/shop/sales/to/InvoiceItemTO.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/common/target/" />
     <ignored path="$PROJECT_DIR$/sales/target/" />
@@ -68,7 +47,7 @@
         <counts>
           <entry key="class" value="5" />
           <entry key="gitignore" value="1" />
-          <entry key="java" value="465" />
+          <entry key="java" value="483" />
           <entry key="pom" value="4" />
           <entry key="xml" value="53" />
           <entry key="yaml" value="3" />
@@ -78,7 +57,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="5" />
-          <entry key="JAVA" value="465" />
+          <entry key="JAVA" value="483" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="XML" value="57" />
           <entry key="YAML" value="9" />
@@ -87,7 +66,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="110" />
-          <entry key="java" value="7626" />
+          <entry key="java" value="7804" />
           <entry key="xml" value="182" />
           <entry key="yaml" value="150" />
           <entry key="yml" value="129" />
@@ -95,7 +74,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="7626" />
+          <entry key="JAVA" value="7804" />
           <entry key="PLAIN_TEXT" value="110" />
           <entry key="XML" value="182" />
           <entry key="YAML" value="279" />
@@ -108,106 +87,108 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sales/src/main/java/org/army/shop/sales/util/SalesUtils.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shop-management-system-parent/inventory-api/src/main/java/org/army/shop/inventory/to/InventoryAdjustmentRequest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="89" column="22" lean-forward="true" selection-start-line="89" selection-start-column="22" selection-end-line="89" selection-end-column="22" />
+            <state relative-caret-position="90">
+              <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shop-management-system-parent/inventory-api/src/main/java/org/army/shop/inventory/to/InventorySearchRequest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#393#394#0" expanded="true" />
+                <element signature="e#424#425#0" expanded="true" />
+                <element signature="e#470#471#0" expanded="true" />
+                <element signature="e#510#511#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/util/InventoryConstants.java">
+        <entry file="file://$PROJECT_DIR$/shop-management-system-parent/inventory-api/src/main/java/org/army/shop/inventory/to/ItemBatchStockTO.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
-              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/src/main/java/org/army/shop/common/dao/CommonDAO.java">
+        <entry file="file://$PROJECT_DIR$/shop-management-system-parent/inventory-api/src/main/java/org/army/shop/inventory/to/ItemBatchTO.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
-              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+              <folding>
+                <element signature="e#1419#1420#0" expanded="true" />
+                <element signature="e#1475#1476#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shop-management-system-parent/common-api/src/main/java/org/army/shop/common/CommonConstants.java">
+        <entry file="file://$PROJECT_DIR$/shop-management-system-parent/inventory-api/src/main/java/org/army/shop/inventory/to/ItemBrandTO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+            <state relative-caret-position="60">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/util/InventoryUtils.java">
+        <entry file="file://$PROJECT_DIR$/shop-management-system-parent/inventory-api/src/main/java/org/army/shop/inventory/to/ItemCategoryTO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shop-management-system-parent/inventory-api/src/main/java/org/army/shop/inventory/to/SupplierTO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shop-management-system-parent/inventory-api/src/main/java/org/army/shop/inventory/to/UnitPriceTO.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
-              <caret line="17" selection-start-line="17" selection-end-line="26" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/src/main/java/org/army/shop/common/util/CommonUtils.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/bl/impl/InventoryBLImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="590">
+              <caret line="71" column="46" selection-start-line="71" selection-start-column="46" selection-end-line="71" selection-end-column="46" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shop-management-system-parent/sales-api/src/main/java/org/army/shop/sales/to/AmendmentTO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="28" column="35" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
-              <folding>
-                <element signature="e#498#499#0" expanded="true" />
-                <element signature="e#546#547#0" expanded="true" />
-                <element signature="e#582#583#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sales/src/main/java/org/army/shop/sales/bl/impl/SalesServiceBLImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="470">
-              <caret line="49" column="55" selection-start-line="49" selection-start-column="55" selection-end-line="49" selection-end-column="55" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shop-management-system-parent/sales-api/src/main/java/org/army/shop/sales/to/SalesRequest.java">
+        <entry file="file://$PROJECT_DIR$/shop-management-system-parent/inventory-api/src/main/java/org/army/shop/inventory/to/InventorySupplyRequest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
-              <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shop-management-system-parent/sales-api/src/main/java/org/army/shop/sales/to/SalesInvoiceTO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="42" lean-forward="true" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+              <folding>
+                <element signature="e#214#215#0" expanded="true" />
+                <element signature="e#247#248#0" expanded="true" />
+                <element signature="e#297#298#0" expanded="true" />
+                <element signature="e#341#342#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -235,6 +216,7 @@
       <find>feign</find>
       <find>spring-cloud-openfeign.version</find>
       <find>spring-cloud-openfeign-dependencies</find>
+      <find>TODO</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -254,9 +236,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/bl/SupplierBL.java" />
-        <option value="$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/bl/InventoryBL.java" />
-        <option value="$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/service/InventoryServiceImpl.java" />
         <option value="$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/util/InventoryToTOTransformer.java" />
         <option value="$PROJECT_DIR$/shop-management-system-parent/inventory-api/src/main/java/org/army/shop/inventory/to/ItemBatchTO.java" />
         <option value="$PROJECT_DIR$/shop-management-system-parent/inventory-api/src/main/java/org/army/shop/inventory/to/BaseItemBatchTO.java" />
@@ -276,7 +255,6 @@
         <option value="$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/bl/impl/SupplierBLImpl.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/shop-management-system-parent/sales-api/src/main/java/org/army/shop/sales/to/PurchaseInvoiceTO.java" />
-        <option value="$PROJECT_DIR$/shop-management-system-parent/sales-api/src/main/java/org/army/shop/sales/to/InvoiceItemTO.java" />
         <option value="$PROJECT_DIR$/sales/src/main/java/org/army/shop/sales/bl/PurchaseServiceBL.java" />
         <option value="$PROJECT_DIR$/sales/src/main/java/org/army/shop/sales/bl/SalesServiceBL.java" />
         <option value="$PROJECT_DIR$/sales/src/main/java/org/army/shop/sales/service/SalesServiceImpl.java" />
@@ -299,12 +277,16 @@
         <option value="$PROJECT_DIR$/sales/src/main/java/org/army/shop/sales/entity/Invoice.java" />
         <option value="$PROJECT_DIR$/sales/src/main/java/org/army/shop/sales/util/SalesToEntityTransformer.java" />
         <option value="$PROJECT_DIR$/sales/src/main/java/org/army/shop/sales/bl/impl/PurchaseServiceBLImpl.java" />
-        <option value="$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/bl/impl/InventoryBLImpl.java" />
         <option value="$PROJECT_DIR$/shop-management-system-parent/inventory-api/src/main/java/org/army/shop/inventory/client/InventoryServiceClient.java" />
         <option value="$PROJECT_DIR$/shop-management-system-parent/sales-api/src/main/java/org/army/shop/sales/to/AmendmentTO.java" />
-        <option value="$PROJECT_DIR$/sales/src/main/java/org/army/shop/sales/bl/impl/SalesServiceBLImpl.java" />
         <option value="$PROJECT_DIR$/common/src/main/java/org/army/shop/common/util/CommonUtils.java" />
         <option value="$PROJECT_DIR$/sales/src/main/java/org/army/shop/sales/util/SalesUtils.java" />
+        <option value="$PROJECT_DIR$/sales/src/main/java/org/army/shop/sales/bl/impl/SalesServiceBLImpl.java" />
+        <option value="$PROJECT_DIR$/shop-management-system-parent/inventory-api/src/main/java/org/army/shop/inventory/to/InventoryAdjustmentItemTO.java" />
+        <option value="$PROJECT_DIR$/shop-management-system-parent/sales-api/src/main/java/org/army/shop/sales/to/InvoiceItemTO.java" />
+        <option value="$PROJECT_DIR$/shop-management-system-parent/inventory-api/src/main/java/org/army/shop/inventory/to/ItemQuantityTO.java" />
+        <option value="$PROJECT_DIR$/shop-management-system-parent/inventory-api/src/main/java/org/army/shop/inventory/to/InventorySearchRequest.java" />
+        <option value="$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/bl/impl/InventoryBLImpl.java" />
       </list>
     </option>
   </component>
@@ -838,6 +820,17 @@
               <item name="shop-management-system" type="b2602c69:ProjectViewProjectNode" />
               <item name="ims" type="462c0819:PsiDirectoryNode" />
               <item name="shop-management-system-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="inventory-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="inventory" type="462c0819:PsiDirectoryNode" />
+              <item name="to" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop-management-system" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ims" type="462c0819:PsiDirectoryNode" />
+              <item name="shop-management-system-parent" type="462c0819:PsiDirectoryNode" />
               <item name="organization-api" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -971,7 +964,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537964934657" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537967814161" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/shop-management-system-parent/organization-api/pom.xml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -1043,12 +1036,12 @@
       <workItem from="1537819093091" duration="5697000" />
       <workItem from="1537838969881" duration="1966000" />
       <workItem from="1537851478941" duration="214000" />
-      <workItem from="1537931284003" duration="23927000" />
+      <workItem from="1537931284003" duration="25410000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64624000" />
+    <option name="totallyTimeSpent" value="66107000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="26" width="1920" height="1053" extended-state="6" />
@@ -1096,108 +1089,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/shop-management-system-parent/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop-management-system-parent/base-api/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop-management-system-parent/inventory-api/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop-management-system-parent/common-api/src/main/java/org/army/shop/common/to/AddressTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop-management-system-parent/common-api/src/main/java/org/army/shop/common/to/BaseResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop-management-system-parent/common-api/src/main/java/org/army/shop/common/to/BaseTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop-management-system-parent/common-api/src/main/java/org/army/shop/common/to/NameTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop-management-system-parent/common-api/src/main/java/org/army/shop/common/to/PrimaryContactInformationTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop-management-system-parent/common-api/src/main/java/org/army/shop/common/to/SecondaryContactInformationTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop-management-system-parent/common-api/src/main/java/org/army/shop/common/to/ValueDefinition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop-management-system-application/src/main/java/org/army/shop/ShopManagementSystemApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop-management-system-parent/inventory-api/src/main/java/org/army/shop/inventory/api/SupplierService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/service/SupplierServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="42" selection-start-line="42" selection-end-line="43" selection-end-column="101" />
-          <folding>
-            <element signature="e#1924#1925#0" expanded="true" />
-            <element signature="e#1973#1974#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sales/src/main/java/org/army/shop/sales/repository/InvoiceRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="6" column="22" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sales/src/main/java/org/army/shop/sales/service/SalesServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -1256,17 +1147,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop-management-system-parent/sales-api/src/main/java/org/army/shop/sales/to/InvoiceItemTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="e#598#599#0" expanded="true" />
-            <element signature="e#632#633#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1380,13 +1260,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/bl/impl/InventoryBLImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="590">
-          <caret line="59" column="40" selection-start-line="59" selection-start-column="40" selection-end-line="59" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/bl/impl/SupplierBLImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1094">
@@ -1435,27 +1308,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shop-management-system-parent/sales-api/src/main/java/org/army/shop/sales/to/InvoiceTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop-management-system-parent/sales-api/src/main/java/org/army/shop/sales/to/SalesInvoiceTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="42" lean-forward="true" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop-management-system-parent/sales-api/src/main/java/org/army/shop/sales/to/SalesRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/shop-management-system-parent/sales-api/src/main/java/org/army/shop/sales/to/AmendmentTO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -1464,16 +1316,6 @@
             <element signature="e#498#499#0" expanded="true" />
             <element signature="e#546#547#0" expanded="true" />
             <element signature="e#582#583#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sales/src/main/java/org/army/shop/sales/bl/impl/SalesServiceBLImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
-          <caret line="49" column="55" selection-start-line="49" selection-start-column="55" selection-end-line="49" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1518,11 +1360,191 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sales/src/main/java/org/army/shop/sales/util/SalesUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="89" column="22" lean-forward="true" selection-start-line="89" selection-start-column="22" selection-end-line="89" selection-end-column="22" />
+        <state relative-caret-position="396">
+          <caret line="82" column="29" selection-start-line="82" selection-start-column="29" selection-end-line="82" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sales/src/main/java/org/army/shop/sales/bl/impl/SalesServiceBLImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="39" column="53" lean-forward="true" selection-start-line="39" selection-start-column="53" selection-end-line="39" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop-management-system-parent/sales-api/src/main/java/org/army/shop/sales/to/SalesRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop-management-system-parent/sales-api/src/main/java/org/army/shop/sales/to/SalesInvoiceTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="37" lean-forward="true" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop-management-system-parent/sales-api/src/main/java/org/army/shop/sales/to/InvoiceTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop-management-system-parent/sales-api/src/main/java/org/army/shop/sales/to/InvoiceItemTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+          <folding>
+            <element signature="e#598#599#0" expanded="true" />
+            <element signature="e#632#633#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop-management-system-parent/inventory-api/src/main/java/org/army/shop/inventory/to/ItemQuantityTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+          <folding>
+            <element signature="e#213#214#0" expanded="true" />
+            <element signature="e#253#254#0" expanded="true" />
+            <element signature="e#285#286#0" expanded="true" />
+            <element signature="e#324#325#0" expanded="true" />
+            <element signature="e#355#356#0" expanded="true" />
+            <element signature="e#407#408#0" expanded="true" />
+            <element signature="e#447#448#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop-management-system-parent/inventory-api/src/main/java/org/army/shop/inventory/to/BaseItemBatchTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop-management-system-parent/inventory-api/src/main/java/org/army/shop/inventory/to/InventoryAdjustmentItemTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="15" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
+          <folding>
+            <element signature="e#181#182#0" expanded="true" />
+            <element signature="e#215#216#0" expanded="true" />
+            <element signature="e#267#268#0" expanded="true" />
+            <element signature="e#313#314#0" expanded="true" />
+            <element signature="e#391#392#0" expanded="true" />
+            <element signature="e#422#423#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop-management-system-parent/inventory-api/src/main/java/org/army/shop/inventory/to/InventorySearchResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop-management-system-parent/inventory-api/src/main/java/org/army/shop/inventory/to/InventorySupplyItemBatchTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop-management-system-parent/inventory-api/src/main/java/org/army/shop/inventory/to/InventorySupplyRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding>
+            <element signature="e#214#215#0" expanded="true" />
+            <element signature="e#247#248#0" expanded="true" />
+            <element signature="e#297#298#0" expanded="true" />
+            <element signature="e#341#342#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop-management-system-parent/inventory-api/src/main/java/org/army/shop/inventory/to/InventoryAdjustmentRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop-management-system-parent/inventory-api/src/main/java/org/army/shop/inventory/to/InventorySearchRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#393#394#0" expanded="true" />
+            <element signature="e#424#425#0" expanded="true" />
+            <element signature="e#470#471#0" expanded="true" />
+            <element signature="e#510#511#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop-management-system-parent/inventory-api/src/main/java/org/army/shop/inventory/to/ItemBatchStockTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop-management-system-parent/inventory-api/src/main/java/org/army/shop/inventory/to/ItemBatchTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding>
+            <element signature="e#1419#1420#0" expanded="true" />
+            <element signature="e#1475#1476#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop-management-system-parent/inventory-api/src/main/java/org/army/shop/inventory/to/ItemBrandTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop-management-system-parent/inventory-api/src/main/java/org/army/shop/inventory/to/ItemCategoryTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop-management-system-parent/inventory-api/src/main/java/org/army/shop/inventory/to/SupplierTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop-management-system-parent/inventory-api/src/main/java/org/army/shop/inventory/to/UnitPriceTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inventory/src/main/java/org/army/shop/inventory/bl/impl/InventoryBLImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="590">
+          <caret line="71" column="46" selection-start-line="71" selection-start-column="46" selection-end-line="71" selection-end-column="46" />
         </state>
       </provider>
     </entry>

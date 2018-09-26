@@ -3,9 +3,13 @@ package org.army.shop.inventory.to;
 public class InventorySearchRequest {
 
     private String view;
+
     private Long branchId;
+
     private String genericCriterion;
+
     private String itemCategoryCode;
+
     private String brandName;
 
     public String getView() {

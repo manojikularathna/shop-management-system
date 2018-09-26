@@ -6,12 +6,15 @@ import org.army.shop.common.to.BaseResponse;
 import org.army.shop.inventory.bl.InventoryBL;
 import org.army.shop.inventory.dao.InventoryDAO;
 import org.army.shop.inventory.entity.ItemBatch;
+import org.army.shop.inventory.entity.ItemBatchStock;
 import org.army.shop.inventory.entity.ItemCategory;
 import org.army.shop.inventory.to.*;
 import org.army.shop.inventory.util.InventoryConstants;
 import org.army.shop.inventory.util.InventoryToTOTransformer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Arrays;
 import java.util.List;
@@ -55,8 +58,21 @@ public class InventoryBLImpl implements InventoryBL {
         return response;
     }
 
-    @Override
+    @Transactional(propagation = Propagation.REQUIRED)
     public BaseResponse remove(InventoryAdjustmentRequest inventoryAdjustment) {
+
+        inventoryAdjustment.getItems()
+                .forEach(adjustment -> {
+
+                    ItemBatch itemBatch = commonDAO.get(ItemBatch.class, adjustment.getItemBatchId());
+                    ItemBatchStock itemBatchStock = itemBatch.getStock();
+                    itemBatchStock.getRemainingQuantity().setQuantity(
+                            itemBatchStock.getRemainingQuantity().getQuantity().subtract(adjustment.getQuantity().getQuantity()));
+
+                    commonDAO.update(itemBatch);
+
+                });
+
 //        TODO -------------------------
         return null;
     }

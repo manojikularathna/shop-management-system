@@ -48,6 +48,8 @@ public class ItemBatch extends BaseEntity {
     @JoinColumn(name = "item_batch_stock_id")
     private ItemBatchStock stock;
 
+    private Long branchId;
+
     public Long getItemBatchId() {
         return itemBatchId;
     }
@@ -118,5 +120,13 @@ public class ItemBatch extends BaseEntity {
 
     public void setStock(ItemBatchStock stock) {
         this.stock = stock;
+    }
+
+    public Long getBranchId() {
+        return branchId;
+    }
+
+    public void setBranchId(Long branchId) {
+        this.branchId = branchId;
     }
 }

@@ -3,6 +3,7 @@ package org.army.shop.inventory.to;
 public class InventorySearchRequest {
 
     private String view;
+    private Long branchId;
     private String genericCriterion;
     private String itemCategoryCode;
     private String brandName;
@@ -13,6 +14,14 @@ public class InventorySearchRequest {
 
     public void setView(String view) {
         this.view = view;
+    }
+
+    public Long getBranchId() {
+        return branchId;
+    }
+
+    public void setBranchId(Long branchId) {
+        this.branchId = branchId;
     }
 
     public String getGenericCriterion() {

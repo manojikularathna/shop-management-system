@@ -5,11 +5,13 @@ import org.army.shop.inventory.bl.InventoryBL;
 import org.army.shop.inventory.dao.InventoryDAO;
 import org.army.shop.inventory.entity.ItemBatch;
 import org.army.shop.inventory.to.*;
+import org.army.shop.inventory.util.InventoryConstants;
 import org.army.shop.inventory.util.InventoryToTOTransformer;
 import org.army.shop.sales.to.BaseResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -25,9 +27,15 @@ public class InventoryBLImpl implements InventoryBL {
     @Override
     public InventorySearchResponse search(InventorySearchRequest inventorySearch) {
 
+        List<String> keywords = Arrays
+                .stream(inventorySearch.getGenericCriterion().split(InventoryConstants.ITEM_SEARCH_DELIMITER))
+                .map(String::trim)
+                .collect(Collectors.toList());
+
         InventorySearchTO inventorySearchTO = new InventorySearchTO();
-        inventorySearchTO.setItemCategoryCode(inventorySearch.getGenericCriterion());
-        inventorySearchTO.setBrandName(inventorySearch.getGenericCriterion());
+        inventorySearchTO.setBranchId(inventorySearch.getBranchId());
+        inventorySearchTO.setItemCategoryCode(keywords);
+        inventorySearchTO.setBrandName(keywords);
 
         List<ItemBatch> items = inventoryDAO.search(inventorySearchTO);
 

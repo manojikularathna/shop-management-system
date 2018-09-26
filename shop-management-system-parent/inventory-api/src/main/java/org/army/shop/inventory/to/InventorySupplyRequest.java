@@ -4,13 +4,23 @@ import java.util.List;
 
 public class InventorySupplyRequest {
 
-    private List<ItemBatchTO> items;
+    private SupplierTO supplier;
 
-    public List<ItemBatchTO> getItems() {
+    private List<InventorySupplyItemBatchTO> items;
+
+    public SupplierTO getSupplier() {
+        return supplier;
+    }
+
+    public void setSupplier(SupplierTO supplier) {
+        this.supplier = supplier;
+    }
+
+    public List<InventorySupplyItemBatchTO> getItems() {
         return items;
     }
 
-    public void setItems(List<ItemBatchTO> items) {
+    public void setItems(List<InventorySupplyItemBatchTO> items) {
         this.items = items;
     }
 }

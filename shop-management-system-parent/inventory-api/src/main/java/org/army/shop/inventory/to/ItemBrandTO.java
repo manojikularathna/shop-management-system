@@ -1,5 +1,7 @@
 package org.army.shop.inventory.to;
 
+import org.army.shop.sales.to.ValueDefinition;
+
 import java.math.BigDecimal;
 import java.util.List;
 
@@ -11,7 +13,7 @@ public class ItemBrandTO {
 
     private String brandName;
 
-    private BigDecimal profitPercentage;
+    private ValueDefinition profit;
 
     private ItemQuantityTO lowStockBoundary;
 
@@ -41,12 +43,12 @@ public class ItemBrandTO {
         this.brandName = brandName;
     }
 
-    public BigDecimal getProfitPercentage() {
-        return profitPercentage;
+    public ValueDefinition getProfit() {
+        return profit;
     }
 
-    public void setProfitPercentage(BigDecimal profitPercentage) {
-        this.profitPercentage = profitPercentage;
+    public void setProfit(ValueDefinition profit) {
+        this.profit = profit;
     }
 
     public ItemQuantityTO getLowStockBoundary() {

@@ -1,19 +1,17 @@
 package org.army.shop.inventory.to;
 
+import org.army.shop.sales.to.ValueDefinition;
+
 import java.math.BigDecimal;
 import java.util.Date;
 
-public class ItemBatchTO {
+public class ItemBatchTO extends BaseItemBatchTO {
 
     private Long itemBatchId;
 
-    private BigDecimal profitPercentage;
+    private ValueDefinition profit;
 
     private ItemBrandTO itemBrand;
-
-    private Date purchasedDate;
-
-    private ItemQuantityTO purchasedQuantity;
 
     private UnitPriceTO purchasedPrice;
 
@@ -31,12 +29,12 @@ public class ItemBatchTO {
         this.itemBatchId = itemBatchId;
     }
 
-    public BigDecimal getProfitPercentage() {
-        return profitPercentage;
+    public ValueDefinition getProfit() {
+        return profit;
     }
 
-    public void setProfitPercentage(BigDecimal profitPercentage) {
-        this.profitPercentage = profitPercentage;
+    public void setProfit(ValueDefinition profit) {
+        this.profit = profit;
     }
 
     public ItemBrandTO getItemBrand() {
@@ -45,22 +43,6 @@ public class ItemBatchTO {
 
     public void setItemBrand(ItemBrandTO itemBrand) {
         this.itemBrand = itemBrand;
-    }
-
-    public Date getPurchasedDate() {
-        return purchasedDate;
-    }
-
-    public void setPurchasedDate(Date purchasedDate) {
-        this.purchasedDate = purchasedDate;
-    }
-
-    public ItemQuantityTO getPurchasedQuantity() {
-        return purchasedQuantity;
-    }
-
-    public void setPurchasedQuantity(ItemQuantityTO purchasedQuantity) {
-        this.purchasedQuantity = purchasedQuantity;
     }
 
     public UnitPriceTO getPurchasedPrice() {

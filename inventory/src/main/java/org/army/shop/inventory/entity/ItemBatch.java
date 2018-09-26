@@ -3,6 +3,7 @@ package org.army.shop.inventory.entity;
 import org.army.shop.common.entity.BaseEntity;
 import org.army.shop.common.entity.ItemQuantity;
 import org.army.shop.common.entity.UnitPrice;
+import org.army.shop.common.entity.Value;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
@@ -15,7 +16,12 @@ public class ItemBatch extends BaseEntity {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long itemBatchId;
 
-    private BigDecimal profitPercentage;
+    @Embedded
+    @AttributeOverrides({
+            @AttributeOverride(name = "type", column = @Column ( name = "profit_type")),
+            @AttributeOverride(name = "value", column = @Column ( name = "profit_value"))
+    })
+    private Value profit;
 
     @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @JoinColumn(name = "item_brand_id")
@@ -58,12 +64,12 @@ public class ItemBatch extends BaseEntity {
         this.itemBatchId = itemBatchId;
     }
 
-    public BigDecimal getProfitPercentage() {
-        return profitPercentage;
+    public Value getProfit() {
+        return profit;
     }
 
-    public void setProfitPercentage(BigDecimal profitPercentage) {
-        this.profitPercentage = profitPercentage;
+    public void setProfit(Value profit) {
+        this.profit = profit;
     }
 
     public ItemBrand getItemBrand() {

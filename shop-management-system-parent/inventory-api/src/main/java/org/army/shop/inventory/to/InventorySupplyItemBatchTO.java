@@ -1,6 +1,6 @@
 package org.army.shop.inventory.to;
 
-import org.army.shop.common.to.ValueDefinition;
+import org.army.shop.sales.to.ValueDefinition;
 
 public class InventorySupplyItemBatchTO extends BaseItemBatchTO {
 

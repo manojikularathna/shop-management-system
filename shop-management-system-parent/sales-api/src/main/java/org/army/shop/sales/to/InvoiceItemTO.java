@@ -1,4 +1,4 @@
-package org.army.shop.common.to;
+package org.army.shop.sales.to;
 
 import org.army.shop.inventory.to.ItemQuantityTO;
 import org.army.shop.inventory.to.UnitPriceTO;

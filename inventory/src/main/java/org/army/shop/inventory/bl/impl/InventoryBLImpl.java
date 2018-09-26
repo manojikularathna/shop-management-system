@@ -9,7 +9,7 @@ import org.army.shop.inventory.entity.ItemCategory;
 import org.army.shop.inventory.to.*;
 import org.army.shop.inventory.util.InventoryConstants;
 import org.army.shop.inventory.util.InventoryToTOTransformer;
-import org.army.shop.common.to.BaseResponse;
+import org.army.shop.sales.to.BaseResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

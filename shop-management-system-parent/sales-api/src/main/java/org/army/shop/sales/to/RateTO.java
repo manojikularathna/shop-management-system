@@ -1,11 +1,10 @@
-package org.army.shop.common.to;
+package org.army.shop.sales.to;
 
-import java.math.BigDecimal;
-
-public class ValueDefinition {
+public class RateTO {
 
     private String type;
-    private BigDecimal value;
+
+    private String value;
 
     public String getType() {
         return type;
@@ -15,11 +14,11 @@ public class ValueDefinition {
         this.type = type;
     }
 
-    public BigDecimal getValue() {
+    public String getValue() {
         return value;
     }
 
-    public void setValue(BigDecimal value) {
+    public void setValue(String value) {
         this.value = value;
     }
 }

@@ -1,6 +1,6 @@
 package org.army.shop.organization.to;
 
-import org.army.shop.common.to.NameTO;
+import org.army.shop.sales.to.NameTO;
 
 public class UserTO {
 

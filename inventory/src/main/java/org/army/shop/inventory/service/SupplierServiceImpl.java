@@ -4,7 +4,7 @@ import org.army.shop.inventory.api.SupplierService;
 import org.army.shop.inventory.bl.SupplierBL;
 import org.army.shop.inventory.to.InventorySupplyRequest;
 import org.army.shop.inventory.to.SupplierTO;
-import org.army.shop.common.to.BaseResponse;
+import org.army.shop.sales.to.BaseResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.RequestBody;

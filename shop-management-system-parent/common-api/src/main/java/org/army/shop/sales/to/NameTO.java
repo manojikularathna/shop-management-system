@@ -1,4 +1,4 @@
-package org.army.shop.common.to;
+package org.army.shop.sales.to;
 
 public class NameTO {
 

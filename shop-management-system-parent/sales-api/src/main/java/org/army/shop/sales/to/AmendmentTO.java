@@ -8,7 +8,7 @@ public class AmendmentTO {
 
     private RateTO rate;
 
-    private BigDecimal value;
+    private BigDecimal amount;
 
     public String getName() {
         return name;
@@ -26,11 +26,11 @@ public class AmendmentTO {
         this.rate = rate;
     }
 
-    public BigDecimal getValue() {
-        return value;
+    public BigDecimal getAmount() {
+        return amount;
     }
 
-    public void setValue(BigDecimal value) {
-        this.value = value;
+    public void setAmount(BigDecimal amount) {
+        this.amount = amount;
     }
 }

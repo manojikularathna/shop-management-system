@@ -24,6 +24,10 @@ public class Invoice extends BaseEntity {
     @JoinColumn(name = "invoice_id")
     private List<InvoiceItem> items;
 
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @JoinColumn(name = "invoice_id")
+    private List<Amendment> amendments;
+
     private String status;
 
     public Long getInvoiceId() {
@@ -64,6 +68,14 @@ public class Invoice extends BaseEntity {
 
     public void setItems(List<InvoiceItem> items) {
         this.items = items;
+    }
+
+    public List<Amendment> getAmendments() {
+        return amendments;
+    }
+
+    public void setAmendments(List<Amendment> amendments) {
+        this.amendments = amendments;
     }
 
     public String getStatus() {

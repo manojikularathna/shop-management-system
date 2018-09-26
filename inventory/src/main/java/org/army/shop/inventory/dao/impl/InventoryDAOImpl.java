@@ -12,7 +12,6 @@ import javax.persistence.Query;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Queue;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.Collectors;
 
@@ -76,9 +75,7 @@ public class InventoryDAOImpl implements InventoryDAO {
 
         Query query = entityManager
                 .createQuery(content.toString());
-        params.forEach((k, v) -> {
-            query.setParameter(k, v);
-        });
+        params.forEach(query::setParameter);
 
         List<ItemBatch> items = query.getResultList();
 

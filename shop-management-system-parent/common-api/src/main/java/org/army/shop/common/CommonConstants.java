@@ -7,4 +7,8 @@ public interface CommonConstants {
         String PERCENTAGE = "PERCENTAGE";
     }
 
+    interface Status {
+        String ACTIVE = "ACTIVE";
+        String CANCELLED = "CANCELLED";
+    }
 }

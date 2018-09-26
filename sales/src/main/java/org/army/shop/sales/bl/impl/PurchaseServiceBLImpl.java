@@ -1,10 +1,10 @@
 package org.army.shop.sales.bl.impl;
 
 import org.army.shop.common.dao.CommonDAO;
+import org.army.shop.common.to.BaseResponse;
 import org.army.shop.inventory.client.SupplierServiceClient;
 import org.army.shop.inventory.to.InventorySupplyRequest;
 import org.army.shop.sales.bl.PurchaseServiceBL;
-import org.army.shop.common.to.BaseResponse;
 import org.army.shop.sales.entity.PurchaseInvoice;
 import org.army.shop.sales.to.CancelTransactionRequest;
 import org.army.shop.sales.to.PurchaseRequest;
@@ -28,6 +28,8 @@ public class PurchaseServiceBLImpl implements PurchaseServiceBL {
     public BaseResponse purchase(PurchaseRequest purchaseOrder) {
 
         PurchaseInvoice purchaseInvoice = SalesToEntityTransformer.toPurchaseInvoice(purchaseOrder);
+        purchaseInvoice.setTotal(SalesUtils.getInvoiceTotal(purchaseInvoice));
+
         commonDAO.add(purchaseInvoice);
 
         InventorySupplyRequest inventorySupplyRequest = SalesUtils.toInventorySupplyRequest(purchaseOrder);

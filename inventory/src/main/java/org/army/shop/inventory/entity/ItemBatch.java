@@ -6,7 +6,6 @@ import org.army.shop.common.entity.UnitPrice;
 import org.army.shop.common.entity.Value;
 
 import javax.persistence.*;
-import java.math.BigDecimal;
 import java.util.Date;
 
 @Entity

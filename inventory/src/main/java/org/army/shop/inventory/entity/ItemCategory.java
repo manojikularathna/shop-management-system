@@ -5,7 +5,6 @@ import org.army.shop.common.entity.ItemQuantity;
 import org.army.shop.common.entity.Value;
 
 import javax.persistence.*;
-import java.math.BigDecimal;
 
 @Entity
 public class ItemCategory extends BaseEntity {

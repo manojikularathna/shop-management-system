@@ -2,6 +2,7 @@ package org.army.shop.inventory.bl.impl;
 
 import org.army.shop.common.conf.ApplicationConfiguration;
 import org.army.shop.common.dao.CommonDAO;
+import org.army.shop.common.to.BaseResponse;
 import org.army.shop.inventory.bl.InventoryBL;
 import org.army.shop.inventory.dao.InventoryDAO;
 import org.army.shop.inventory.entity.ItemBatch;
@@ -9,7 +10,6 @@ import org.army.shop.inventory.entity.ItemCategory;
 import org.army.shop.inventory.to.*;
 import org.army.shop.inventory.util.InventoryConstants;
 import org.army.shop.inventory.util.InventoryToTOTransformer;
-import org.army.shop.common.to.BaseResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -57,7 +57,7 @@ public class InventoryBLImpl implements InventoryBL {
 
     @Override
     public BaseResponse remove(InventoryAdjustmentRequest inventoryAdjustment) {
-//        TODO
+//        TODO -------------------------
         return null;
     }
 
@@ -69,7 +69,7 @@ public class InventoryBLImpl implements InventoryBL {
 
     @Override
     public BaseResponse updateItemCategory(ItemCategoryTO itemCategoryTO) {
-        //        TODO
+//        TODO
         return null;
     }
 

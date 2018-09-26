@@ -90,8 +90,14 @@ public class InventoryBLImpl implements InventoryBL {
 
     @Transactional(propagation = Propagation.REQUIRED)
     public BaseResponse updateItemCategory(ItemCategoryTO itemCategoryTO) {
-//        TODO
-        return null;
+
+        ItemCategory itemCategory = commonDAO.get(ItemCategory.class, itemCategoryTO.getItemCategoryId());
+        InventoryToEntityTransformer.mergeItemCategory(itemCategory, itemCategoryTO);
+        commonDAO.update(itemCategory);
+
+        BaseResponse response = new BaseResponse();
+        response.setSuccess(true);
+        return response;
     }
 
     public List<ItemCategoryTO> getItemCategories() {

@@ -49,19 +49,26 @@ public class SupplierBLImpl implements SupplierBL {
     }
 
     @Transactional(propagation = Propagation.REQUIRED)
-    public BaseResponse addSupplier(SupplierTO supplier) {
+    public BaseResponse addSupplier(SupplierTO supplierTO) {
 
-        Supplier s = InventoryToEntityTransformer.toSupplier(supplier);
-        s = commonDAO.add(s);
+        Supplier supplier = InventoryToEntityTransformer.toSupplier(supplierTO);
+        supplier = commonDAO.add(supplier);
 
         BaseResponse response = new BaseResponse();
         response.setSuccess(true);
         return response;
     }
 
-    public BaseResponse updateSupplier(SupplierTO supplier) {
-//        TODO
-        return null;
+    @Transactional(propagation = Propagation.REQUIRED)
+    public BaseResponse updateSupplier(SupplierTO supplierTO) {
+
+        Supplier supplier = commonDAO.get(Supplier.class, supplierTO.getSupplierId());
+        InventoryToEntityTransformer.mergeSupplier(supplier, supplierTO);
+        commonDAO.update(supplier);
+
+        BaseResponse response = new BaseResponse();
+        response.setSuccess(true);
+        return response;
     }
 
     @Transactional(propagation = Propagation.REQUIRED)

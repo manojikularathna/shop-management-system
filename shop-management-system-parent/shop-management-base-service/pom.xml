@@ -10,7 +10,7 @@
   <groupId>org.army.shop</groupId>
   <artifactId>shop-management-base-service</artifactId>
   <version>0.0.1</version>
-  <name>shop-mangement-base-service</name>
+  <name>shop-management-base-service</name>
   <url>http://maven.apache.org</url>
   <properties>
   </properties>

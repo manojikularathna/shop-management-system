@@ -33,7 +33,7 @@ public class InventoryToEntityTransformer {
     }
 
     public SupplyItem toSupplyItem(SupplyItemTO supplyItemTO) {
-        SupplyItem supplyItem = null;
+        SupplyItem supplyItem;
         if (supplyItemTO.getSupplyItemId() != null) {
             supplyItem = commonDAO.get(SupplyItem.class, supplyItemTO.getSupplyItemId());
         } else {

@@ -93,7 +93,7 @@ public class SupplierBLImpl implements SupplierBL {
                     batch.setSupplier(supplier);
                     batch.setItemBrand(brand);
 
-                    Value value = null;
+                    Value value;
                     if (brand.getProfit() != null) {
                         value = brand.getProfit();
                     } else if (brand.getCategory().getProfit() != null) {

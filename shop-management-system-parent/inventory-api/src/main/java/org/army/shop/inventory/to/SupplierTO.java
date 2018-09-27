@@ -1,7 +1,6 @@
 package org.army.shop.inventory.to;
 
 import org.army.shop.common.to.PrimaryContactInformationTO;
-import org.army.shop.common.to.SecondaryContactInformationTO;
 
 import java.util.List;
 

@@ -7,11 +7,9 @@
     <artifactId>shop-management-system</artifactId>
     <version>0.0.1</version>
   </parent>
-  <groupId>org.army.shop</groupId>
   <artifactId>shop-management-system-application</artifactId>
   <version>0.0.1</version>
   <name>shop-management-system-application</name>
-  <url>http://maven.apache.org</url>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>

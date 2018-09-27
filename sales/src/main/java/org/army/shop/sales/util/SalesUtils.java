@@ -2,34 +2,51 @@ package org.army.shop.sales.util;
 
 import org.army.shop.common.CommonConstants;
 import org.army.shop.inventory.to.InventoryAdjustmentRequest;
+import org.army.shop.inventory.to.InventorySupplyItemBatchTO;
 import org.army.shop.inventory.to.InventorySupplyRequest;
 import org.army.shop.sales.entity.Invoice;
-import org.army.shop.sales.to.AmendmentTO;
-import org.army.shop.sales.to.InvoiceItemTO;
-import org.army.shop.sales.to.PurchaseRequest;
-import org.army.shop.sales.to.SalesRequest;
+import org.army.shop.sales.to.*;
 
 import java.math.BigDecimal;
 import java.math.MathContext;
 import java.math.RoundingMode;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicReference;
+import java.util.stream.Collectors;
 
 public class SalesUtils {
 
     public static InventorySupplyRequest toInventorySupplyRequest(PurchaseRequest purchaseRequest) {
         InventorySupplyRequest inventorySupplyRequest = new InventorySupplyRequest();
-//TODO
+
+        PurchaseInvoiceTO purchaseInvoiceTO = purchaseRequest.getInvoice();
+        inventorySupplyRequest.setSupplierId(purchaseInvoiceTO.getSupplier());
+        inventorySupplyRequest.setItems(purchaseInvoiceTO.getItems()
+                .stream()
+                .map(purchaseInvoiceItemTO -> {
+                    InventorySupplyItemBatchTO inventorySupplyItemBatchTO = SalesToTOTransformer.toIntInventorySupplyItemBatchTO(purchaseInvoiceItemTO);
+                    inventorySupplyItemBatchTO.setBranchId(purchaseInvoiceTO.getBranchId());
+
+                    return inventorySupplyItemBatchTO;
+                })
+                .collect(Collectors.toList()));
+
         return inventorySupplyRequest;
     }
 
     public static InventoryAdjustmentRequest toInventoryAdjustmentRequest(SalesRequest salesRequest) {
         InventoryAdjustmentRequest inventoryAdjustmentRequest = new InventoryAdjustmentRequest();
-//TODO
+
+        SalesInvoiceTO salesInvoiceTO = salesRequest.getInvoice();
+        inventoryAdjustmentRequest.setItems(salesInvoiceTO.getItems()
+                .stream()
+                .map(SalesToTOTransformer::toInventoryAdjustmentItemTO)
+                .collect(Collectors.toList()));
+
         return inventoryAdjustmentRequest;
     }
 
-    public static BigDecimal getSubTotal(List<InvoiceItemTO> items) {
+    public static BigDecimal getSubTotal(List<? extends InvoiceItemTO> items) {
         AtomicReference<BigDecimal> total = new AtomicReference<>();
         total.set(BigDecimal.ZERO);
 

@@ -9,8 +9,6 @@ public class InvoiceItemTO {
 
     private Long invoiceItemId;
 
-    private Long itemBatchId;
-
     private ItemQuantityTO quantity;
 
     private UnitPriceTO price;
@@ -25,14 +23,6 @@ public class InvoiceItemTO {
 
     public void setInvoiceItemId(Long invoiceItemId) {
         this.invoiceItemId = invoiceItemId;
-    }
-
-    public Long getItemBatchId() {
-        return itemBatchId;
-    }
-
-    public void setItemBatchId(Long itemBatchId) {
-        this.itemBatchId = itemBatchId;
     }
 
     public ItemQuantityTO getQuantity() {

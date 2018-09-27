@@ -5,6 +5,7 @@ import java.util.List;
 public class InventorySupplyRequest {
 
     private Long supplierId;
+
     private List<InventorySupplyItemBatchTO> items;
 
     public Long getSupplierId() {

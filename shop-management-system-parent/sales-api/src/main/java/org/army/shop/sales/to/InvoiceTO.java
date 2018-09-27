@@ -14,8 +14,6 @@ public class InvoiceTO {
 
     private BigDecimal total;
 
-    private List<InvoiceItemTO> items;
-
     private String status;
 
     public Long getInvoiceId() {
@@ -48,14 +46,6 @@ public class InvoiceTO {
 
     public void setTotal(BigDecimal total) {
         this.total = total;
-    }
-
-    public List<InvoiceItemTO> getItems() {
-        return items;
-    }
-
-    public void setItems(List<InvoiceItemTO> items) {
-        this.items = items;
     }
 
     public String getStatus() {

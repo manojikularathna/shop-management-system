@@ -4,6 +4,7 @@ import org.army.shop.common.entity.ItemQuantity;
 import org.army.shop.common.entity.Value;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 public class ItemBrand {
@@ -32,6 +33,9 @@ public class ItemBrand {
             @AttributeOverride(name = "quantity", column = @Column ( name = "low_stock_quantity"))
     })
     private ItemQuantity lowStockBoundary;
+
+    @OneToMany(mappedBy = "itemBrand", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    private List<ItemBatch> batches;
 
     public Long getItemBrandId() {
         return itemBrandId;
@@ -71,5 +75,13 @@ public class ItemBrand {
 
     public void setLowStockBoundary(ItemQuantity lowStockBoundary) {
         this.lowStockBoundary = lowStockBoundary;
+    }
+
+    public List<ItemBatch> getBatches() {
+        return batches;
+    }
+
+    public void setBatches(List<ItemBatch> batches) {
+        this.batches = batches;
     }
 }

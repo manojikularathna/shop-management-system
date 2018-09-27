@@ -19,13 +19,13 @@ public class SalesUtils {
 
     public static InventorySupplyRequest toInventorySupplyRequest(PurchaseRequest purchaseRequest) {
         InventorySupplyRequest inventorySupplyRequest = new InventorySupplyRequest();
-
+//TODO
         return inventorySupplyRequest;
     }
 
     public static InventoryAdjustmentRequest toInventoryAdjustmentRequest(SalesRequest salesRequest) {
         InventoryAdjustmentRequest inventoryAdjustmentRequest = new InventoryAdjustmentRequest();
-
+//TODO
         return inventoryAdjustmentRequest;
     }
 

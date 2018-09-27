@@ -1,4 +1,4 @@
-package org.army.shop.inventory.to;
+package org.army.shop.common.to;
 
 import java.math.BigDecimal;
 

@@ -13,8 +13,6 @@ public class SupplierTO {
 
     private PrimaryContactInformationTO primaryContactInfo;
 
-    private SecondaryContactInformationTO secondaryContactInfo;
-
     private List<SupplyItemTO> supplyingItems;
 
     public Long getSupplierId() {
@@ -39,14 +37,6 @@ public class SupplierTO {
 
     public void setPrimaryContactInfo(PrimaryContactInformationTO primaryContactInfo) {
         this.primaryContactInfo = primaryContactInfo;
-    }
-
-    public SecondaryContactInformationTO getSecondaryContactInfo() {
-        return secondaryContactInfo;
-    }
-
-    public void setSecondaryContactInfo(SecondaryContactInformationTO secondaryContactInfo) {
-        this.secondaryContactInfo = secondaryContactInfo;
     }
 
     public List<SupplyItemTO> getSupplyingItems() {

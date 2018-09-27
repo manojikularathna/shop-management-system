@@ -8,6 +8,7 @@ import org.army.shop.common.to.BaseResponse;
 import org.army.shop.inventory.bl.SupplierBL;
 import org.army.shop.inventory.dao.SupplierDAO;
 import org.army.shop.inventory.entity.ItemBatch;
+import org.army.shop.inventory.entity.ItemBatchStock;
 import org.army.shop.inventory.entity.ItemBrand;
 import org.army.shop.inventory.entity.Supplier;
 import org.army.shop.inventory.to.InventorySupplyRequest;
@@ -35,6 +36,12 @@ public class SupplierBLImpl implements SupplierBL {
     @Autowired
     private ApplicationConfiguration configuration;
 
+    @Autowired
+    private InventoryToTOTransformer inventoryToTOTransformer;
+
+    @Autowired
+    private InventoryToEntityTransformer inventoryToEntityTransformer;
+
     @Override
     public List<SupplierTO> getSuppliers() {
 
@@ -42,7 +49,7 @@ public class SupplierBLImpl implements SupplierBL {
 
         List<SupplierTO> supplierTOs = suppliers
                 .stream()
-                .map(InventoryToTOTransformer::toSupplierTO)
+                .map(inventoryToTOTransformer::toSupplierTO)
                 .collect(Collectors.toList());
 
         return supplierTOs;
@@ -51,7 +58,7 @@ public class SupplierBLImpl implements SupplierBL {
     @Transactional(propagation = Propagation.REQUIRED)
     public BaseResponse addSupplier(SupplierTO supplierTO) {
 
-        Supplier supplier = InventoryToEntityTransformer.toSupplier(supplierTO);
+        Supplier supplier = inventoryToEntityTransformer.toSupplier(supplierTO);
         supplier = commonDAO.add(supplier);
 
         BaseResponse response = new BaseResponse();
@@ -63,7 +70,7 @@ public class SupplierBLImpl implements SupplierBL {
     public BaseResponse updateSupplier(SupplierTO supplierTO) {
 
         Supplier supplier = commonDAO.get(Supplier.class, supplierTO.getSupplierId());
-        InventoryToEntityTransformer.mergeSupplier(supplier, supplierTO);
+        inventoryToEntityTransformer.mergeSupplier(supplier, supplierTO);
         commonDAO.update(supplier);
 
         BaseResponse response = new BaseResponse();
@@ -81,7 +88,7 @@ public class SupplierBLImpl implements SupplierBL {
                 .map(item -> {
 
                     ItemBrand brand = commonDAO.get(ItemBrand.class, item.getItemBrandId());
-                    ItemBatch batch = InventoryToEntityTransformer.toItemBatch(item);
+                    ItemBatch batch = inventoryToEntityTransformer.toItemBatch(item);
 
                     batch.setSupplier(supplier);
                     batch.setItemBrand(brand);
@@ -98,8 +105,12 @@ public class SupplierBLImpl implements SupplierBL {
                     }
 
                     UnitPrice sellingPrice = InventoryUtils.getSellingPrice(batch.getPurchasedPrice(), value);
-                    batch.getStock().setSellingPrice(sellingPrice);
+                    ItemBatchStock itemBatchStock = batch.getStock();
 
+                    if (itemBatchStock != null) {
+                        itemBatchStock.setRemainingQuantity(batch.getPurchasedQuantity());
+                        itemBatchStock.setSellingPrice(sellingPrice);
+                    }
                     return batch;
                 })
                 .collect(Collectors.toList());

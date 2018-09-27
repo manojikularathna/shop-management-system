@@ -1,5 +1,7 @@
 package org.army.shop.inventory.to;
 
+import org.army.shop.common.to.ItemQuantityTO;
+
 public class SupplyItemTO {
 
     private Long supplyItemId;

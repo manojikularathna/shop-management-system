@@ -33,6 +33,12 @@ public class InventoryBLImpl implements InventoryBL {
     @Autowired
     private CommonDAO commonDAO;
 
+    @Autowired
+    private InventoryToTOTransformer inventoryToTOTransformer;
+
+    @Autowired
+    private InventoryToEntityTransformer inventoryToEntityTransformer;
+
     @Override
     public InventorySearchResponse search(InventorySearchRequest inventorySearch) {
 
@@ -50,7 +56,7 @@ public class InventoryBLImpl implements InventoryBL {
 
         List<ItemBatchTO> tos = items
                 .stream()
-                .map(InventoryToTOTransformer::toItemBatchTO)
+                .map(inventoryToTOTransformer::toItemBatchTO)
                 .collect(Collectors.toList());
 
         InventorySearchResponse response = new InventorySearchResponse();
@@ -80,7 +86,7 @@ public class InventoryBLImpl implements InventoryBL {
     @Transactional(propagation = Propagation.REQUIRED)
     public BaseResponse addItemCategory(ItemCategoryTO itemCategoryTO) {
 
-        ItemCategory itemCategory = InventoryToEntityTransformer.toItemCategory(itemCategoryTO);
+        ItemCategory itemCategory = inventoryToEntityTransformer.toItemCategory(itemCategoryTO);
         itemCategory = commonDAO.add(itemCategory);
 
         BaseResponse response = new BaseResponse();
@@ -92,7 +98,7 @@ public class InventoryBLImpl implements InventoryBL {
     public BaseResponse updateItemCategory(ItemCategoryTO itemCategoryTO) {
 
         ItemCategory itemCategory = commonDAO.get(ItemCategory.class, itemCategoryTO.getItemCategoryId());
-        InventoryToEntityTransformer.mergeItemCategory(itemCategory, itemCategoryTO);
+        inventoryToEntityTransformer.mergeItemCategory(itemCategory, itemCategoryTO);
         commonDAO.update(itemCategory);
 
         BaseResponse response = new BaseResponse();
@@ -105,7 +111,7 @@ public class InventoryBLImpl implements InventoryBL {
 
         List<ItemCategoryTO> supplierTOs = suppliers
                 .stream()
-                .map(InventoryToTOTransformer::toItemCategoryTO)
+                .map(inventoryToTOTransformer::toItemCategoryTO)
                 .collect(Collectors.toList());
 
         return supplierTOs;

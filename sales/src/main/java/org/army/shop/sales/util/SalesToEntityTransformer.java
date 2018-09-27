@@ -11,18 +11,20 @@ public class SalesToEntityTransformer {
 
     public static PurchaseInvoice toPurchaseInvoice(PurchaseRequest purchaseRequest) {
         PurchaseInvoice purchaseInvoice = new PurchaseInvoice();
-
+//TODO
         return purchaseInvoice;
     }
 
     public static SalesInvoice toSalesInvoice(SalesRequest salesRequest) {
         SalesInvoice salesInvoice = new SalesInvoice();
+//TODO
 
         return salesInvoice;
     }
 
     public static Amendment toAmendment(AmendmentTO amendmentTO) {
         Amendment amendment = new Amendment();
+//TODO
 
         return amendment;
     }

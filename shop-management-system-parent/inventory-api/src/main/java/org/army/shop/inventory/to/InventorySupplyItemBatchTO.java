@@ -1,5 +1,7 @@
 package org.army.shop.inventory.to;
 
+import org.army.shop.common.to.ItemQuantityTO;
+import org.army.shop.common.to.UnitPriceTO;
 import org.army.shop.common.to.ValueDefinition;
 
 public class InventorySupplyItemBatchTO extends BaseItemBatchTO {

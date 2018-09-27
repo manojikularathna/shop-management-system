@@ -1,5 +1,8 @@
 package org.army.shop.inventory.to;
 
+import org.army.shop.common.to.ItemQuantityTO;
+import org.army.shop.common.to.UnitPriceTO;
+
 public class ItemBatchStockTO {
 
     private Long itemBatchStockId;

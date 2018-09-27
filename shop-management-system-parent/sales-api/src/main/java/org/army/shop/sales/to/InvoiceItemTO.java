@@ -1,7 +1,7 @@
 package org.army.shop.sales.to;
 
-import org.army.shop.inventory.to.ItemQuantityTO;
-import org.army.shop.inventory.to.UnitPriceTO;
+import org.army.shop.common.to.ItemQuantityTO;
+import org.army.shop.common.to.UnitPriceTO;
 
 import java.math.BigDecimal;
 

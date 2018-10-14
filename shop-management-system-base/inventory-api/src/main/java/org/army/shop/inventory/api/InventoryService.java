@@ -1,4 +1,4 @@
-package org.army.shop.inventory.bl;
+package org.army.shop.inventory.api;
 
 import org.army.base.common.to.BaseResponse;
 import org.army.shop.inventory.to.InventoryAdjustmentRequest;
@@ -8,7 +8,7 @@ import org.army.shop.inventory.to.ItemCategoryTO;
 
 import java.util.List;
 
-public interface InventoryBL {
+public interface InventoryService {
 
     BaseResponse addItemCategory(ItemCategoryTO itemCategoryTO);
 

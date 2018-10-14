@@ -1,6 +1,6 @@
 package org.army.shop.inventory.entity;
 
-import org.army.shop.common.entity.PrimaryContactInformation;
+import org.army.base.common.entity.PrimaryContactInformation;
 
 import javax.persistence.*;
 import java.util.List;

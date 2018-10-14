@@ -1,6 +1,6 @@
 package org.army.shop.sales.service;
 
-import org.army.shop.common.to.BaseResponse;
+import org.army.base.common.to.BaseResponse;
 import org.army.shop.sales.api.SalesService;
 import org.army.shop.sales.bl.SalesServiceBL;
 import org.army.shop.sales.to.CancelTransactionRequest;

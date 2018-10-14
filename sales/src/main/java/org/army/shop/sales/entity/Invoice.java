@@ -1,6 +1,6 @@
 package org.army.shop.sales.entity;
 
-import org.army.shop.common.entity.BaseEntity;
+import org.army.base.common.entity.BaseEntity;
 
 import javax.persistence.*;
 import java.math.BigDecimal;

@@ -1,4 +1,4 @@
-package org.army.shop.inventory.bl;
+package org.army.shop.inventory.api;
 
 import org.army.base.common.to.BaseResponse;
 import org.army.shop.inventory.to.InventorySupplyRequest;
@@ -6,7 +6,7 @@ import org.army.shop.inventory.to.SupplierTO;
 
 import java.util.List;
 
-public interface SupplierBL {
+public interface SupplierService {
 
     List<SupplierTO> getSuppliers();
 

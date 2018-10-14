@@ -19,12 +19,11 @@
   </dependencies>
 
   <modules>
-    <module>shop-management-system-parent</module>
+    <module>shop-management-system-base</module>
     <module>common</module>
-    <module>organization</module>
+    <!--<module>organization</module>-->
     <module>inventory</module>
     <module>sales</module>
-    <module>accounting</module>
     <module>shop-management-system-application</module>
   </modules>
 

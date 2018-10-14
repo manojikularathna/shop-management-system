@@ -1,6 +1,6 @@
 package org.army.shop.inventory.service;
 
-import org.army.shop.common.to.BaseResponse;
+import org.army.base.common.to.BaseResponse;
 import org.army.shop.inventory.api.SupplierService;
 import org.army.shop.inventory.bl.SupplierBL;
 import org.army.shop.inventory.to.InventorySupplyRequest;

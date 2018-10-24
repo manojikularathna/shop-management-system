@@ -1,7 +1,7 @@
 package org.army.shop.inventory.bl.impl;
 
 import org.army.base.common.to.BaseResponse;
-import org.army.shop.common.conf.ApplicationConfiguration;
+import org.army.shop.common.conf.ShopManagementApplicationConfiguration;
 import org.army.shop.common.dao.CommonDAO;
 import org.army.shop.inventory.bl.InventoryBL;
 import org.army.shop.inventory.dao.InventoryDAO;
@@ -25,7 +25,7 @@ import java.util.stream.Collectors;
 public class InventoryBLImpl implements InventoryBL {
 
     @Autowired
-    private ApplicationConfiguration configuration;
+    private ShopManagementApplicationConfiguration configuration;
 
     @Autowired
     private InventoryDAO inventoryDAO;

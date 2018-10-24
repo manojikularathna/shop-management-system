@@ -1,7 +1,7 @@
 package org.army.shop.inventory.bl.impl;
 
 import org.army.base.common.to.BaseResponse;
-import org.army.shop.common.conf.ApplicationConfiguration;
+import org.army.shop.common.conf.ShopManagementApplicationConfiguration;
 import org.army.shop.common.dao.CommonDAO;
 import org.army.shop.common.entity.UnitPrice;
 import org.army.shop.common.entity.Value;
@@ -34,7 +34,7 @@ public class SupplierBLImpl implements SupplierBL {
     private CommonDAO commonDAO;
 
     @Autowired
-    private ApplicationConfiguration configuration;
+    private ShopManagementApplicationConfiguration configuration;
 
     @Autowired
     private InventoryToTOTransformer inventoryToTOTransformer;

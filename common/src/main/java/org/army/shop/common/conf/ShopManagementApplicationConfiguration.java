@@ -10,7 +10,7 @@ import java.util.Map;
 
 @Configuration
 @ConfigurationProperties(prefix = "shop")
-public class ApplicationConfiguration {
+public class ShopManagementApplicationConfiguration {
 
     private ValueDefinition profit;
     private Map<AmendmentDefinition.Type, List<AmendmentDefinition>> amendments;

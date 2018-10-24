@@ -1,7 +1,7 @@
 package org.army.shop.sales.bl.impl;
 
 import org.army.base.common.to.BaseResponse;
-import org.army.shop.common.conf.ApplicationConfiguration;
+import org.army.shop.common.conf.ShopManagementApplicationConfiguration;
 import org.army.shop.common.dao.CommonDAO;
 import org.army.shop.inventory.client.InventoryServiceClient;
 import org.army.shop.inventory.to.InventoryAdjustmentRequest;
@@ -34,7 +34,7 @@ public class SalesServiceBLImpl implements SalesServiceBL {
     private CommonDAO commonDAO;
 
     @Autowired
-    private ApplicationConfiguration configuration;
+    private ShopManagementApplicationConfiguration configuration;
 
     @Override
     public SalesCalculationResponse calculate(SalesRequest sales) {

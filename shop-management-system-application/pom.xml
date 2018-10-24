@@ -26,11 +26,6 @@
     </dependency>
     <dependency>
       <groupId>org.army.shop</groupId>
-      <artifactId>organization</artifactId>
-      <version>0.0.1</version>
-    </dependency>
-    <dependency>
-      <groupId>org.army.shop</groupId>
       <artifactId>inventory</artifactId>
       <version>0.0.1</version>
     </dependency>
@@ -40,8 +35,8 @@
       <version>0.0.1</version>
     </dependency>
     <dependency>
-      <groupId>org.army.shop</groupId>
-      <artifactId>accounting</artifactId>
+      <groupId>org.army.base</groupId>
+      <artifactId>base-accounting</artifactId>
       <version>0.0.1</version>
     </dependency>
     <dependency>
@@ -70,10 +65,6 @@
             </dependency>
             <dependency>
               <groupId>org.army.shop</groupId>
-              <artifactId>organization</artifactId>
-            </dependency>
-            <dependency>
-              <groupId>org.army.shop</groupId>
               <artifactId>inventory</artifactId>
             </dependency>
             <dependency>
@@ -81,8 +72,8 @@
               <artifactId>sales</artifactId>
             </dependency>
             <dependency>
-              <groupId>org.army.shop</groupId>
-              <artifactId>accounting</artifactId>
+              <groupId>org.army.base</groupId>
+              <artifactId>base-accounting</artifactId>
             </dependency>
           </requiresUnpack>
         </configuration>

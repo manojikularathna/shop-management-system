@@ -1,8 +1,8 @@
 package org.army.shop.sales.bl.impl;
 
 import org.army.base.common.to.BaseResponse;
+import org.army.common.dao.CommonDAO;
 import org.army.shop.common.conf.ShopManagementApplicationConfiguration;
-import org.army.shop.common.dao.CommonDAO;
 import org.army.shop.inventory.client.InventoryServiceClient;
 import org.army.shop.inventory.to.InventoryAdjustmentRequest;
 import org.army.shop.sales.bl.SalesServiceBL;

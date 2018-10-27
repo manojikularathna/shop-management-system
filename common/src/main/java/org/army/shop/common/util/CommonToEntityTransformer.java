@@ -1,8 +1,8 @@
 package org.army.shop.common.util;
 
-import org.army.base.common.entity.Address;
-import org.army.base.common.entity.PrimaryContactInformation;
-import org.army.base.common.entity.SecondaryContactInformation;
+import org.army.common.entity.Address;
+import org.army.common.entity.PrimaryContactInformation;
+import org.army.common.entity.SecondaryContactInformation;
 import org.army.base.common.to.AddressTO;
 import org.army.base.common.to.PrimaryContactInformationTO;
 import org.army.base.common.to.SecondaryContactInformationTO;

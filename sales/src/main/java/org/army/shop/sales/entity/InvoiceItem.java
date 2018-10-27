@@ -1,6 +1,6 @@
 package org.army.shop.sales.entity;
 
-import org.army.base.common.entity.BaseEntity;
+import org.army.common.entity.BaseEntity;
 import org.army.shop.common.entity.ItemQuantity;
 import org.army.shop.common.entity.UnitPrice;
 

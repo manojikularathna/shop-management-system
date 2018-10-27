@@ -1,6 +1,6 @@
 package org.army.shop.inventory.util;
 
-import org.army.shop.common.dao.CommonDAO;
+import org.army.common.dao.CommonDAO;
 import org.army.shop.common.util.CommonToEntityTransformer;
 import org.army.shop.inventory.entity.*;
 import org.army.shop.inventory.to.*;

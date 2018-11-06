@@ -30,7 +30,7 @@ public class SalesSchedule {
     @Autowired
     private SalesDAO salesDAO;
 
-    @Scheduled(fixedRate = 5000)
+    @Scheduled(cron = "0 10 00 * * *")
     public void submitSales() {
 
         AccountingConfiguration accounting = configuration.getAccounting();

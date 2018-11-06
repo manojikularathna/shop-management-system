@@ -1,6 +1,8 @@
 package org.army.shop.sales.util;
 
 import org.army.shop.common.CommonConstants;
+import org.army.shop.common.to.ItemQuantityTO;
+import org.army.shop.common.to.UnitPriceTO;
 import org.army.shop.inventory.to.InventoryAdjustmentRequest;
 import org.army.shop.inventory.to.InventorySupplyItemBatchTO;
 import org.army.shop.inventory.to.InventorySupplyRequest;
@@ -52,10 +54,16 @@ public class SalesUtils {
 
         items
                 .forEach(item -> {
-                    total.set(total.get().add(item.getAmount()));
+                    total.set(total.get().add(getAmount(item.getPrice(), item.getQuantity())));
                 });
 
         return total.get();
+    }
+
+    public static BigDecimal getAmount(UnitPriceTO price, ItemQuantityTO quantity) {
+        return price.getPrice()
+                .multiply(quantity.getQuantity())
+                .round(new MathContext(2, RoundingMode.CEILING));
     }
 
     public static BigDecimal getAmendmentsTotal(List<AmendmentTO> amendments) {

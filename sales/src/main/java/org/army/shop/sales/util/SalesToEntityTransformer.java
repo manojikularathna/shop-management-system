@@ -62,9 +62,7 @@ public class SalesToEntityTransformer {
         invoiceItem.setItemBatchId(invoiceItem.getItemBatchId());
         invoiceItem.setQuantity(CommonToEntityTransformer.toItemQuantity(invoiceItemTO.getQuantity()));
         invoiceItem.setPrice(CommonToEntityTransformer.toUnitPrice(invoiceItemTO.getPrice()));
-        invoiceItem.setAmount(invoiceItemTO.getPrice().getPrice()
-                .multiply(invoiceItemTO.getQuantity().getQuantity())
-                .round(new MathContext(2, RoundingMode.CEILING)));
+        invoiceItem.setAmount(SalesUtils.getAmount(invoiceItemTO.getPrice(), invoiceItemTO.getQuantity()));
         invoiceItem.setStatus(CommonConstants.Status.ACTIVE);
 
         return invoiceItem;

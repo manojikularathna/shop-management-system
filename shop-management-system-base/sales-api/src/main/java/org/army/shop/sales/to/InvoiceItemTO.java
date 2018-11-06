@@ -13,8 +13,6 @@ public class InvoiceItemTO {
 
     private UnitPriceTO price;
 
-    private BigDecimal amount;
-
     private String status;
 
     public Long getInvoiceItemId() {
@@ -39,14 +37,6 @@ public class InvoiceItemTO {
 
     public void setPrice(UnitPriceTO price) {
         this.price = price;
-    }
-
-    public BigDecimal getAmount() {
-        return amount;
-    }
-
-    public void setAmount(BigDecimal amount) {
-        this.amount = amount;
     }
 
     public String getStatus() {

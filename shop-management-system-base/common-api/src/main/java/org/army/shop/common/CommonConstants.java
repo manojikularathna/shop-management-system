@@ -11,4 +11,9 @@ public interface CommonConstants {
         String ACTIVE = "ACTIVE";
         String CANCELLED = "CANCELLED";
     }
+
+    interface TransactionTypeCode {
+        String SALES = "SALES";
+        String PURCHASE = "PURCHASE";
+    }
 }

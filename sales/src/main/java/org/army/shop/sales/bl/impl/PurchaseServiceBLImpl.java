@@ -1,7 +1,14 @@
 package org.army.shop.sales.bl.impl;
 
 import org.army.base.common.to.BaseResponse;
+import org.army.common.accounting.client.TransactionServiceClient;
+import org.army.common.accounting.to.AccountingRequest;
+import org.army.common.accounting.to.common.OrganizationTO;
+import org.army.common.accounting.to.transaction.TransactionTO;
 import org.army.common.dao.CommonDAO;
+import org.army.shop.common.CommonConstants;
+import org.army.shop.common.conf.AccountingConfiguration;
+import org.army.shop.common.conf.ShopManagementApplicationConfiguration;
 import org.army.shop.inventory.client.SupplierServiceClient;
 import org.army.shop.inventory.to.InventorySupplyRequest;
 import org.army.shop.sales.bl.PurchaseServiceBL;
@@ -15,6 +22,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.Date;
+
 @Service
 public class PurchaseServiceBLImpl implements PurchaseServiceBL {
 
@@ -22,7 +31,13 @@ public class PurchaseServiceBLImpl implements PurchaseServiceBL {
     private SupplierServiceClient supplierServiceClient;
 
     @Autowired
+    private TransactionServiceClient transactionServiceClient;
+
+    @Autowired
     private CommonDAO commonDAO;
+
+    @Autowired
+    private ShopManagementApplicationConfiguration configuration;
 
     @Transactional(propagation = Propagation.REQUIRED)
     public BaseResponse purchase(PurchaseRequest purchaseOrder) {
@@ -34,6 +49,24 @@ public class PurchaseServiceBLImpl implements PurchaseServiceBL {
 
         InventorySupplyRequest inventorySupplyRequest = SalesUtils.toInventorySupplyRequest(purchaseOrder);
         supplierServiceClient.supply(inventorySupplyRequest);
+
+        AccountingConfiguration accounting = configuration.getAccounting();
+
+        AccountingRequest<TransactionTO> accountingRequest = new AccountingRequest<>();
+
+        OrganizationTO organizationTO = new OrganizationTO();
+        organizationTO.setOrganization(accounting.getOrganization());
+
+        TransactionTO transactionTO = new TransactionTO();
+        transactionTO.setDate(new Date());
+        transactionTO.setTransactionTypeCode(CommonConstants.TransactionTypeCode.PURCHASE);
+        transactionTO.setAmount(purchaseInvoice.getTotal());
+        transactionTO.setCashBookCode(accounting.getCashbooks().get("CASH")); // TODO -- need to be sent in request
+
+        accountingRequest.setOrganization(organizationTO);
+        accountingRequest.setPayload(transactionTO);
+
+        transactionServiceClient.submit(accountingRequest);
 
         BaseResponse response = new BaseResponse();
         response.setSuccess(true);

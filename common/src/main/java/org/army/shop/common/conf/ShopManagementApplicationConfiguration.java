@@ -14,6 +14,7 @@ public class ShopManagementApplicationConfiguration {
 
     private ValueDefinition profit;
     private Map<AmendmentDefinition.Type, List<AmendmentDefinition>> amendments;
+    private AccountingConfiguration accounting;
 
     public ValueDefinition getProfit() {
         return profit;
@@ -30,4 +31,13 @@ public class ShopManagementApplicationConfiguration {
     public void setAmendments(Map<AmendmentDefinition.Type, List<AmendmentDefinition>> amendments) {
         this.amendments = amendments;
     }
+
+    public AccountingConfiguration getAccounting() {
+        return accounting;
+    }
+
+    public void setAccounting(AccountingConfiguration accounting) {
+        this.accounting = accounting;
+    }
+
 }

@@ -37,13 +37,13 @@ public class InventoryServiceImpl implements InventoryService {
 
     @RequestMapping(path = "/category/add", method = RequestMethod.POST,
             consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
-    public BaseResponse addItemCategory(ItemCategoryTO itemCategoryTO) {
+    public BaseResponse addItemCategory(@RequestBody ItemCategoryTO itemCategoryTO) {
         return inventoryBL.addItemCategory(itemCategoryTO);
     }
 
     @RequestMapping(path = "/category/update", method = RequestMethod.POST,
             consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
-    public BaseResponse updateItemCategory(ItemCategoryTO itemCategoryTO) {
+    public BaseResponse updateItemCategory(@RequestBody ItemCategoryTO itemCategoryTO) {
         return inventoryBL.updateItemCategory(itemCategoryTO);
     }
 

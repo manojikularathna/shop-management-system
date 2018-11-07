@@ -1,7 +1,7 @@
 package org.army.shop.inventory.bl.impl;
 
-import org.army.common.dao.CommonDAO;
 import org.army.base.common.to.BaseResponse;
+import org.army.common.dao.CommonDAO;
 import org.army.shop.common.conf.ShopManagementApplicationConfiguration;
 import org.army.shop.inventory.bl.InventoryBL;
 import org.army.shop.inventory.dao.InventoryDAO;

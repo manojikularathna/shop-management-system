@@ -3,7 +3,6 @@ package org.army.shop.sales.dao.impl;
 import org.army.shop.sales.dao.SalesDAO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
-import org.springframework.web.bind.annotation.RequestBody;
 
 import javax.persistence.EntityManager;
 import java.math.BigDecimal;

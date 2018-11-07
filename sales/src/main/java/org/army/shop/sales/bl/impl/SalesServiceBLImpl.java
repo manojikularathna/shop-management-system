@@ -1,12 +1,7 @@
 package org.army.shop.sales.bl.impl;
 
 import org.army.base.common.to.BaseResponse;
-import org.army.common.accounting.client.TransactionServiceClient;
-import org.army.common.accounting.to.AccountingRequest;
-import org.army.common.accounting.to.common.OrganizationTO;
-import org.army.common.accounting.to.transaction.TransactionTO;
 import org.army.common.dao.CommonDAO;
-import org.army.shop.common.CommonConstants;
 import org.army.shop.common.conf.ShopManagementApplicationConfiguration;
 import org.army.shop.inventory.client.InventoryServiceClient;
 import org.army.shop.inventory.to.InventoryAdjustmentRequest;
@@ -26,7 +21,6 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
 

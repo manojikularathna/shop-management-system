@@ -3,8 +3,6 @@ package org.army.shop.sales.to;
 import org.army.shop.common.to.ItemQuantityTO;
 import org.army.shop.common.to.UnitPriceTO;
 
-import java.math.BigDecimal;
-
 public class InvoiceItemTO {
 
     private Long invoiceItemId;

@@ -1,13 +1,17 @@
 package org.army.shop.common.util;
 
-import org.army.common.entity.Address;
-import org.army.common.entity.PrimaryContactInformation;
-import org.army.common.entity.SecondaryContactInformation;
 import org.army.base.common.to.AddressTO;
 import org.army.base.common.to.PrimaryContactInformationTO;
 import org.army.base.common.to.SecondaryContactInformationTO;
-import org.army.shop.common.entity.*;
-import org.army.shop.common.to.*;
+import org.army.common.entity.Address;
+import org.army.common.entity.PrimaryContactInformation;
+import org.army.common.entity.SecondaryContactInformation;
+import org.army.shop.common.entity.ItemQuantity;
+import org.army.shop.common.entity.UnitPrice;
+import org.army.shop.common.entity.Value;
+import org.army.shop.common.to.ItemQuantityTO;
+import org.army.shop.common.to.UnitPriceTO;
+import org.army.shop.common.to.ValueDefinition;
 
 public class CommonToEntityTransformer {
 

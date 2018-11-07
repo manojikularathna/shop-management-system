@@ -9,7 +9,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @Configuration
 @ComponentScan(basePackages = {"org.army.common", "org.army.shop"})
 @EntityScan(basePackages = {"org.army.common", "org.army.shop"})
-@EnableFeignClients(basePackages = {"org.army.shop.inventory.client", "org.army.common.accounting.client"})
+@EnableFeignClients(basePackages = {"org.army.common.accounting.client", "org.army.shop.inventory.client"})
 @EnableScheduling
 public class ApplicationConfiguration {
 }

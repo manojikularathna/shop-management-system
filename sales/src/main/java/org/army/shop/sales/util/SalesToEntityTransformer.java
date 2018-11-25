@@ -23,7 +23,7 @@ public class SalesToEntityTransformer {
                 .stream()
                 .map(SalesToEntityTransformer::toInvoiceItem)
                 .collect(Collectors.toList()));
-        purchaseInvoice.setDate(new Date());
+        purchaseInvoice.setDate(purchaseInvoiceTO.getDate());
         purchaseInvoice.setStatus(CommonConstants.Status.ACTIVE);
         purchaseInvoice.setTotal(SalesUtils.getInvoiceTotal(purchaseInvoice));
 
@@ -40,7 +40,7 @@ public class SalesToEntityTransformer {
                 .stream()
                 .map(SalesToEntityTransformer::toInvoiceItem)
                 .collect(Collectors.toList()));
-        salesInvoice.setDate(new Date());
+        salesInvoice.setDate(salesInvoiceTO.getDate());
         salesInvoice.setStatus(CommonConstants.Status.ACTIVE);
         salesInvoice.setTotal(SalesUtils.getInvoiceTotal(salesInvoice));
 

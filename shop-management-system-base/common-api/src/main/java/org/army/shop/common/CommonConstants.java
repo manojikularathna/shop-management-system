@@ -14,6 +14,6 @@ public interface CommonConstants {
 
     interface TransactionTypeCode {
         String SALES = "SALES";
-        String PURCHASE = "PURCHASE";
+        String PURCHASES = "PURCHASES";
     }
 }

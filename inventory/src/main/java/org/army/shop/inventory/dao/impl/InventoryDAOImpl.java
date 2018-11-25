@@ -3,6 +3,7 @@ package org.army.shop.inventory.dao.impl;
 import com.google.common.base.Joiner;
 import org.army.shop.inventory.dao.InventoryDAO;
 import org.army.shop.inventory.entity.ItemBatch;
+import org.army.shop.inventory.entity.ItemBrand;
 import org.army.shop.inventory.to.InventorySearchTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -22,7 +23,7 @@ public class InventoryDAOImpl implements InventoryDAO {
     private EntityManager entityManager;
 
     @Override
-    public List<ItemBatch> search(InventorySearchTO inventorySearch) {
+    public List<ItemBatch> searchBatches(InventorySearchTO inventorySearch) {
 
         boolean conditionsInitiated = false;
         AtomicInteger counter = new AtomicInteger(0);
@@ -78,6 +79,62 @@ public class InventoryDAOImpl implements InventoryDAO {
         params.forEach(query::setParameter);
 
         List<ItemBatch> items = query.getResultList();
+
+        return items;
+    }
+
+    public List<ItemBrand> searchBrands(InventorySearchTO inventorySearch) {
+        boolean conditionsInitiated = false;
+        AtomicInteger counter = new AtomicInteger(0);
+        StringBuilder content = new StringBuilder();
+        content.append(" select ib from ItemBrand ib ");
+
+        Map<String, Object> params = new LinkedHashMap<>();
+
+        if (! (inventorySearch.getBrandName().isEmpty() && inventorySearch.getItemCategoryCode().isEmpty())) {
+            content.append(" where ");
+
+            if (!inventorySearch.getBrandName().isEmpty()) {
+                content.append(" ( ");
+                counter.set(0);
+                content.append(Joiner.on(" or ")
+                        .join(inventorySearch.getBrandName()
+                                .stream()
+                                .map(brand -> {
+                                    params.put("brand_" + counter.incrementAndGet(), "%" + brand + "%");
+                                    return " ib.brandName like :brand_" + counter.get() + " ";
+                                })
+                                .collect(Collectors.toList())));
+                content.append(" ) ");
+                conditionsInitiated = true;
+            }
+
+            if (!inventorySearch.getItemCategoryCode().isEmpty()) {
+
+                if (conditionsInitiated) {
+                    content.append(" or ");
+                }
+                content.append(" ( ");
+                counter.set(0);
+                content.append(Joiner.on(" or ")
+                        .join(inventorySearch.getItemCategoryCode()
+                                .stream()
+                                .map(category -> {
+                                    params.put("category_code_" + counter.incrementAndGet(), "%" + category + "%");
+                                    params.put("category_desc_" + counter.get(), "%" + category + "%");
+                                    return " ib.category.itemCategoryCode like :category_code_" + counter.get() + " or " +
+                                            " ib.category.description like :category_desc_" + counter.get() + " ";
+                                })
+                                .collect(Collectors.toList())));
+                content.append(" ) ");
+            }
+        }
+
+        Query query = entityManager
+                .createQuery(content.toString());
+        params.forEach(query::setParameter);
+
+        List<ItemBrand> items = query.getResultList();
 
         return items;
     }

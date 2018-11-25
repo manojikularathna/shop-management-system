@@ -59,7 +59,7 @@ public class PurchaseServiceBLImpl implements PurchaseServiceBL {
 
         TransactionTO transactionTO = new TransactionTO();
         transactionTO.setDate(new Date());
-        transactionTO.setTransactionTypeCode(CommonConstants.TransactionTypeCode.PURCHASE);
+        transactionTO.setTransactionTypeCode(accounting.getTransactions().get(CommonConstants.TransactionTypeCode.PURCHASES));
         transactionTO.setAmount(purchaseInvoice.getTotal());
         transactionTO.setCashBookCode(accounting.getCashbooks().get("CASH")); // TODO -- need to be sent in request
 

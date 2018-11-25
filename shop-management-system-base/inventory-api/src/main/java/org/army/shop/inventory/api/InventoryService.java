@@ -16,7 +16,9 @@ public interface InventoryService {
 
     List<ItemCategoryTO> getItemCategories();
 
-    InventorySearchResponse search(InventorySearchRequest inventorySearch);
+    InventorySearchResponse searchBatches(InventorySearchRequest inventorySearch);
+
+    InventorySearchResponse searchBrands(InventorySearchRequest inventorySearch);
 
     BaseResponse remove(InventoryAdjustmentRequest inventoryAdjustment);
 

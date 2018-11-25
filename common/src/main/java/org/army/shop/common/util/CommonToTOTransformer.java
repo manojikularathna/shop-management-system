@@ -23,13 +23,17 @@ public class CommonToTOTransformer {
     }
 
     public static PrimaryContactInformationTO toPrimaryContactInformationTO(PrimaryContactInformation primaryContactInformation) {
-        PrimaryContactInformationTO primaryContactInformationTO = new PrimaryContactInformationTO();
+        PrimaryContactInformationTO primaryContactInformationTO = null;
 
-        if (primaryContactInformation.getAddress() != null) {
-            primaryContactInformationTO.setAddress(toAddressTO(primaryContactInformation.getAddress()));
+        if (primaryContactInformation != null) {
+            primaryContactInformationTO = new PrimaryContactInformationTO();
+
+            if (primaryContactInformation.getAddress() != null) {
+                primaryContactInformationTO.setAddress(toAddressTO(primaryContactInformation.getAddress()));
+            }
+            primaryContactInformationTO.setEmailAddress(primaryContactInformation.getEmailAddress());
+            primaryContactInformationTO.setPhoneNumber(primaryContactInformation.getPhoneNumber());
         }
-        primaryContactInformationTO.setEmailAddress(primaryContactInformation.getEmailAddress());
-        primaryContactInformationTO.setPhoneNumber(primaryContactInformation.getPhoneNumber());
 
         return primaryContactInformationTO;
     }
@@ -41,9 +45,13 @@ public class CommonToTOTransformer {
     }
 
     public static ItemQuantityTO toItemQuantityTO(ItemQuantity itemQuantity) {
-        ItemQuantityTO itemQuantityTO = new ItemQuantityTO();
-        itemQuantityTO.setUnit(itemQuantity.getUnit());
-        itemQuantityTO.setQuantity(itemQuantity.getQuantity());
+        ItemQuantityTO itemQuantityTO = null;
+
+        if (itemQuantity != null) {
+            itemQuantityTO = new ItemQuantityTO();
+            itemQuantityTO.setUnit(itemQuantity.getUnit());
+            itemQuantityTO.setQuantity(itemQuantity.getQuantity());
+        }
 
         return itemQuantityTO;
     }
@@ -57,9 +65,13 @@ public class CommonToTOTransformer {
     }
 
     public static ValueDefinition toValueDefinition(Value value) {
-        ValueDefinition valueDefinition = new ValueDefinition();
-        valueDefinition.setType(value.getType());
-        valueDefinition.setValue(value.getValue());
+        ValueDefinition valueDefinition = null;
+
+        if (value != null) {
+            valueDefinition = new ValueDefinition();
+            valueDefinition.setType(value.getType());
+            valueDefinition.setValue(value.getValue());
+        }
 
         return valueDefinition;
     }

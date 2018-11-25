@@ -45,16 +45,18 @@ public class SalesServiceBLImpl implements SalesServiceBL {
         salesCalculationResponse.setSubTotal(subtotal);
 
         List<AmendmentTO> amendments = new ArrayList<>();
-        configuration.getAmendments()
-                .forEach((type, list) -> {
-                    list.forEach(definition -> {
-                        AmendmentTO amendmentTO = new AmendmentTO();
-                        amendmentTO.setName(definition.getName());
-                        amendmentTO.setAmount(SalesUtils.getAmendment(definition.getType(), definition.getValue(), subtotal));
+        if (configuration.getAmendments() != null) {
+            configuration.getAmendments()
+                    .forEach((type, list) -> {
+                        list.forEach(definition -> {
+                            AmendmentTO amendmentTO = new AmendmentTO();
+                            amendmentTO.setName(definition.getName());
+                            amendmentTO.setAmount(SalesUtils.getAmendment(definition.getType(), definition.getValue(), subtotal));
 
-                        amendments.add(amendmentTO);
+                            amendments.add(amendmentTO);
+                        });
                     });
-                });
+        }
 
         salesCalculationResponse.setAmendments(amendments);
         salesCalculationResponse.setFinalTotal(salesCalculationResponse.getSubTotal().add(SalesUtils.getAmendmentsTotal(amendments)));

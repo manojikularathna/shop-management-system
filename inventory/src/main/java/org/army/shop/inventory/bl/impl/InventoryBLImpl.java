@@ -7,6 +7,7 @@ import org.army.shop.inventory.bl.InventoryBL;
 import org.army.shop.inventory.dao.InventoryDAO;
 import org.army.shop.inventory.entity.ItemBatch;
 import org.army.shop.inventory.entity.ItemBatchStock;
+import org.army.shop.inventory.entity.ItemBrand;
 import org.army.shop.inventory.entity.ItemCategory;
 import org.army.shop.inventory.to.*;
 import org.army.shop.inventory.util.InventoryConstants;
@@ -17,6 +18,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -40,19 +42,25 @@ public class InventoryBLImpl implements InventoryBL {
     private InventoryToEntityTransformer inventoryToEntityTransformer;
 
     @Override
-    public InventorySearchResponse search(InventorySearchRequest inventorySearch) {
+    public InventorySearchResponse searchBatches(InventorySearchRequest inventorySearch) {
+        List<String> keywords;
 
-        List<String> keywords = Arrays
-                .stream(inventorySearch.getGenericCriterion().split(InventoryConstants.ITEM_SEARCH_DELIMITER))
-                .map(String::trim)
-                .collect(Collectors.toList());
+        if (inventorySearch.getGenericCriterion() != null) {
+            keywords = Arrays
+                    .stream(inventorySearch.getGenericCriterion().split(InventoryConstants.ITEM_SEARCH_DELIMITER))
+                    .map(String::trim)
+                    .filter(val -> !val.isEmpty())
+                    .collect(Collectors.toList());
+        } else {
+            keywords = new ArrayList<>();
+        }
 
         InventorySearchTO inventorySearchTO = new InventorySearchTO();
         inventorySearchTO.setBranchId(inventorySearch.getBranchId());
         inventorySearchTO.setItemCategoryCode(keywords);
         inventorySearchTO.setBrandName(keywords);
 
-        List<ItemBatch> items = inventoryDAO.search(inventorySearchTO);
+        List<ItemBatch> items = inventoryDAO.searchBatches(inventorySearchTO);
 
         List<ItemBatchTO> tos = items
                 .stream()
@@ -60,7 +68,38 @@ public class InventoryBLImpl implements InventoryBL {
                 .collect(Collectors.toList());
 
         InventorySearchResponse response = new InventorySearchResponse();
-        response.setItems(tos);
+        response.setBatches(tos);
+
+        return response;
+    }
+
+    public InventorySearchResponse searchBrands(InventorySearchRequest inventorySearch) {
+        List<String> keywords;
+
+        if (inventorySearch.getGenericCriterion() != null) {
+            keywords = Arrays
+                    .stream(inventorySearch.getGenericCriterion().split(InventoryConstants.ITEM_SEARCH_DELIMITER))
+                    .map(String::trim)
+                    .filter(val -> !val.isEmpty())
+                    .collect(Collectors.toList());
+        } else {
+            keywords = new ArrayList<>();
+        }
+
+        InventorySearchTO inventorySearchTO = new InventorySearchTO();
+        inventorySearchTO.setBranchId(inventorySearch.getBranchId());
+        inventorySearchTO.setItemCategoryCode(keywords);
+        inventorySearchTO.setBrandName(keywords);
+
+        List<ItemBrand> items = inventoryDAO.searchBrands(inventorySearchTO);
+
+        List<ItemBrandTO> tos = items
+                .stream()
+                .map(inventoryToTOTransformer::toItemBrandTO)
+                .collect(Collectors.toList());
+
+        InventorySearchResponse response = new InventorySearchResponse();
+        response.setBrands(tos);
 
         return response;
     }

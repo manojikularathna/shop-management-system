@@ -46,7 +46,7 @@ public class SalesSchedule {
 
         TransactionTO transactionTO = new TransactionTO();
         transactionTO.setDate(salesDate);
-        transactionTO.setTransactionTypeCode(CommonConstants.TransactionTypeCode.SALES);
+        transactionTO.setTransactionTypeCode(accounting.getTransactions().get(CommonConstants.TransactionTypeCode.SALES));
         transactionTO.setAmount(totalSales);
         transactionTO.setCashBookCode(accounting.getCashbooks().get("CASH")); // TODO -- need to be sent in request
 

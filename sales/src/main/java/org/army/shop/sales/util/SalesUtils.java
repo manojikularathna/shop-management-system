@@ -96,10 +96,12 @@ public class SalesUtils {
         AtomicReference<BigDecimal> total = new AtomicReference<>();
         total.set(getSubTotal(invoice));
 
-        invoice.getAmendments()
-                .forEach(amendment -> {
-                    total.set(total.get().add(amendment.getAmount()));
-                });
+        if (invoice.getAmendments() != null) {
+            invoice.getAmendments()
+                    .forEach(amendment -> {
+                        total.set(total.get().add(amendment.getAmount()));
+                    });
+        }
 
 
         return total.get();

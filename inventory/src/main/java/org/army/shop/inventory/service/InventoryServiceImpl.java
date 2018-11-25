@@ -9,13 +9,11 @@ import org.army.shop.inventory.to.InventorySearchResponse;
 import org.army.shop.inventory.to.ItemCategoryTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@CrossOrigin
 @RestController
 @RequestMapping(path = "/inventory")
 public class InventoryServiceImpl implements InventoryService {
@@ -23,10 +21,16 @@ public class InventoryServiceImpl implements InventoryService {
     @Autowired
     private InventoryBL inventoryBL;
 
-    @RequestMapping(path = "/search", method = RequestMethod.POST,
+    @RequestMapping(path = "/search/batch", method = RequestMethod.POST,
             consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
-    public InventorySearchResponse search(@RequestBody InventorySearchRequest inventorySearch) {
-        return inventoryBL.search(inventorySearch);
+    public InventorySearchResponse searchBatches(@RequestBody InventorySearchRequest inventorySearch) {
+        return inventoryBL.searchBatches(inventorySearch);
+    }
+
+    @RequestMapping(path = "/search/brand", method = RequestMethod.POST,
+            consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
+    public InventorySearchResponse searchBrands(@RequestBody InventorySearchRequest inventorySearch) {
+        return inventoryBL.searchBrands(inventorySearch);
     }
 
     @RequestMapping(path = "/remove", method = RequestMethod.POST,

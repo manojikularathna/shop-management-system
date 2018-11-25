@@ -1,25 +1,18 @@
 package org.army.shop.inventory.to;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import java.util.List;
 
+@Setter
+@Getter
 public class InventorySearchResponse {
 
 //    private List<ItemCategoryTO> categories;
-    private List<ItemBatchTO> items;
 
-//    public List<ItemCategoryTO> getCategories() {
-//        return categories;
-//    }
+    private List<ItemBrandTO> brands;
 
-//    public void setCategories(List<ItemCategoryTO> categories) {
-//        this.categories = categories;
-//    }
+    private List<ItemBatchTO> batches;
 
-    public List<ItemBatchTO> getItems() {
-        return items;
-    }
-
-    public void setItems(List<ItemBatchTO> items) {
-        this.items = items;
-    }
 }

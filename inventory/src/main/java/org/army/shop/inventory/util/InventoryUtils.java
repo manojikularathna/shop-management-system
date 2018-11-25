@@ -22,7 +22,7 @@ public class InventoryUtils {
             case CommonConstants.ValueType.PERCENTAGE:
                 sellingPrice.setPrice(purchasedPrice.getPrice()
                         .multiply(BigDecimal.ONE.add(profit.getValue()))
-                        .round(new MathContext(2, RoundingMode.CEILING)));
+                        .setScale(2, RoundingMode.CEILING));
                 break;
         }
 

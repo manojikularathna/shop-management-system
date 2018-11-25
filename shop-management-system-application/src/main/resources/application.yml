@@ -6,9 +6,10 @@ spring:
       ddl-auto: update
     show-sql: true
   datasource:
-    url: jdbc:mysql://localhost:3306/db01
-    username: root
-    password: 12345678
+    url: jdbc:mysql://192.168.8.101:3306/db01
+#    url: jdbc:mysql://localhost:3306/db01
+    username: user-01
+    password: 1234.ASdf
 
 # ----------------
 shop:
@@ -21,7 +22,7 @@ shop:
 #      type: PERCENTAGE
 #      value: 0.0
   accounting:
-    organization: 1
+    organization: welfare
     transactions:
       SALES: SALES
       PURCHASES: PURCHASES

@@ -12,7 +12,7 @@ INSERT INTO `item_category` (`item_category_id`, `version`, `description`, `item
 
 
 INSERT INTO `ledger_account` (`ledger_account_id`, `account_name`, `description`, `ledger_category`, `status`, `attached_account_id`, `version`, `organization`) VALUES (1,'Sales','Sales','I','ACT',NULL,NULL,'welfare'),(2,'Purchases','Purchases','X','ACT',NULL,NULL,'welfare'),(3,'Opening Stock','Opening Stock','N','ACT',NULL,NULL,'welfare'),(4,'Closing Stock','Closing Stock','A','ACT',NULL,NULL,'welfare');
-INSERT INTO `ledger_account_balance` (`ledger_account_balance_id`, `balance`, `date`, `ledger_account_id`, `version`, `status`, `ledger_account_ledger_account_id`) VALUES (1,100.00,'2018-11-01 00:00:00',3,NULL,'ACT',NULL),(2,200.00,'2018-11-30 00:00:00',4,NULL,'ACT',NULL);
+INSERT INTO `ledger_account_balance` (`ledger_account_balance_id`, `balance`, `date`, `ledger_account_id`, `version`, `status`) VALUES (1,100.00,'2018-11-01 00:00:00',3,NULL,'ACT'),(2,200.00,'2018-11-30 00:00:00',4,NULL,'ACT');
 
 
 INSERT INTO `supplier` (`supplier_id`, `name`, `address_line1`, `address_line2`, `contact_information_id`, `email_address`, `phone_number`) VALUES (1,'Kularathna',NULL,NULL,NULL,NULL,NULL),(2,'Ranatunga',NULL,NULL,NULL,NULL,NULL);
